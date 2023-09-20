@@ -3,12 +3,13 @@ from flask_cors import CORS
 import requests
 import sseclient
 import os
+# from openai.error import RateLimitError
 
 from dotenv import load_dotenv 
 
 # OPENAI_API_KEY
 load_dotenv()
-OPENAI_API_KEY = os.getenv('AZURE_OPENAI_API_KEY')
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # to deploy in Azure
 # OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
@@ -20,7 +21,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return 'Hello World!'
+    return "Hello world"
 
 
 @app.route('/api/prompt', methods=['GET', 'POST'])
@@ -28,6 +29,7 @@ def prompt():
     if request.method == 'POST':
         prompt = request.json['prompt']
     
+        # try:
         def generate():
             url = 'https://api.openai.com/v1/chat/completions'
             headers = {
@@ -57,6 +59,9 @@ def prompt():
                         yield('')
 
         return Response(stream_with_context(generate()))
+        # except error:
+        #     return Response("The server is experiencing a high volume of requests. Please try again later.")
+
 
 if __name__ == '__main__':
     app.run(port=8080, debug=True)
