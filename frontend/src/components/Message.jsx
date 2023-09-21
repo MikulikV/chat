@@ -4,12 +4,12 @@ import user_logo from "../assets/img/user.png";
 import cbn_logo from "../assets/img/favicon.ico";
 
 const Message = (props) => {
-  const message = props.message ? props.message : "no message";
+  const message = props.message;
   const timestamp = props.timestamp ? props.timestamp : "";
   const role = props.role;
   return (
     <div className={role}>
-      {role === "gpt" ? (
+      {role === "assistant" ? (
         <div className="avatar">
           <Avatar alt="CBN Assistant" src={cbn_logo}>
             CA

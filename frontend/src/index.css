@@ -45,14 +45,14 @@ p {
   overflow-y: auto;
   height: 100%;
 }
-.gpt,
+.assistant,
 .user {
   display: flex;
 }
 .user {
   justify-content: flex-end;
 }
-.gpt .message {
+.assistant .message {
   position: relative;
   margin-top: 20px;
   margin-left: 20px;
@@ -65,7 +65,7 @@ p {
   border: 1px solid #97c6e3;
   border-radius: 10px;
 }
-.gpt .message:after {
+.assistant .message:after {
   content: "";
   position: absolute;
   width: 0;
@@ -76,7 +76,7 @@ p {
   top: 0;
   left: -15px;
 }
-.gpt .message:before {
+.assistant .message:before {
   content: "";
   position: absolute;
   width: 0;
@@ -125,10 +125,10 @@ p {
 }
 .timestamp {
   position: absolute;
-  font-size: 0.5em;
+  font-size: 0.55em;
   font-weight: 300;
   margin-top: 10px;
-  bottom: -2px;
+  bottom: 1px;
   right: 5px;
 }
 .form {

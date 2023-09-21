@@ -3,15 +3,23 @@ import Message from "./components/Message";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import { useState } from "react";
+// import axios from "axios";
 
 const App = () => {
-  const [promptArea, setPromptArea] = useState("");
-  const [question, setQuestion] = useState("");
-  const [promptResponse, setPromptResponse] = useState("");
+  const [inputValue, setInputValue] = useState("");
+  // const [question, setQuestion] = useState("");
+  // const [promptResponse, setPromptResponse] = useState("");
+  const [messages, setMessages] = useState([]);
 
-  const handleSubmit = async () => {
-    setQuestion(promptArea);
-    const url = "http://localhost:8080/api/prompt";
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // setLoading(true);
+    // setQuestion(inputValue);
+    // setMessages([
+    //   ...messages,
+    //   { role: "assistant", content: "How can I help you?" },
+    // ]);
+    const url = "http://localhost:8080/api/chat";
     let tmpPromptResponse = "";
     try {
       const response = await fetch(url, {
@@ -20,10 +28,10 @@ const App = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          prompt: promptArea,
+          user_input: inputValue,
+          conversation: messages,
         }),
       });
-      setPromptArea("");
 
       // eslint-disable-next-line no-undef
       let decoder = new TextDecoderStream();
@@ -37,29 +45,41 @@ const App = () => {
           break;
         } else {
           tmpPromptResponse += value;
-          setPromptResponse(tmpPromptResponse);
+          // setPromptResponse(tmpPromptResponse);
+          setMessages([
+            ...messages,
+            { role: "user", content: inputValue },
+            { role: "assistant", content: tmpPromptResponse },
+          ]);
         }
       }
     } catch (error) {
       console.log(error);
+    } finally {
+      setInputValue("");
+      // setLoading(false);
     }
   };
   return (
     <div className="app">
       <div className="container">
-        <h1>Chat with CBN</h1>
+        <header>
+          <h1>Chat with CBN</h1>
+        </header>
         <div className="messages">
-          <Message message={question} timestamp="MM/DD 00:00" role="user" />
-          <Message
-            message={promptResponse}
-            timestamp="MM/DD 00:00"
-            role="gpt"
-          />
+          {messages.map((message, index) => (
+            <Message
+              key={index}
+              role={message.role}
+              message={message.content}
+              timestamp="MM/DD 00:00"
+            />
+          ))}
         </div>
         <div className="form">
           <input
-            onChange={(e) => setPromptArea(e.target.value)}
-            value={promptArea}
+            onChange={(e) => setInputValue(e.target.value)}
+            value={inputValue}
             type="text"
             placeholder="Send a message"
           />
