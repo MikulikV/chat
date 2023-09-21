@@ -1,5 +1,5 @@
 from flask import Flask, request, Response, stream_with_context, json
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import requests
 import sseclient
 import os
@@ -15,16 +15,16 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
 app = Flask(__name__)
-
 # handle cors
 CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.route('/')
 def index():
     return "Hello world"
 
-# Constants
+# Constants for openai language model
 max_response_tokens = 500
 token_limit= 4000
 prompt = "You are a helpful assistant, your name is CBN Assistant. You are a Christian and your task is to help people to be better."
@@ -44,6 +44,7 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo"):
 
 
 @app.route('/api/chat', methods=['GET', 'POST'])
+@cross_origin()  # CORS
 def chat():
     if request.method == 'POST':
         user_input = request.json.get('user_input')

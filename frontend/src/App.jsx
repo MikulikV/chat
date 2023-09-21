@@ -3,7 +3,8 @@ import Message from "./components/Message";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import { useState } from "react";
-// import axios from "axios";
+import { getTimeStamp } from "./utils/dateUtils";
+import TextField from "@mui/material/TextField";
 
 const App = () => {
   const [inputValue, setInputValue] = useState("");
@@ -16,17 +17,7 @@ const App = () => {
     setInputValue("");
     const url = "http://localhost:8080/api/chat";
     let currentAnswer = "";
-
-    // Timestamp
-    const currentDate = new Date();
-    const MM = String(currentDate.getMonth() + 1).padStart(2, "0");
-    const DD = String(currentDate.getDate()).padStart(2, "0");
-    const HH = currentDate.getHours();
-    const ampm = HH >= 12 ? "PM" : "AM";
-    const H =
-      HH > 12 ? String(HH - 12).padStart(2, "0") : String(HH).padStart(2, "0");
-    const M = String(currentDate.getMinutes()).padStart(2, "0");
-    const timestamp = `${MM}/${DD} ${H}:${M} ${ampm}`;
+    const timestamp = getTimeStamp();
 
     try {
       const response = await fetch(url, {
@@ -40,7 +31,6 @@ const App = () => {
         }),
       });
 
-      let decoder = new TextDecoderStream();
       if (!response.body) {
         setMessages([
           ...messages,
@@ -54,6 +44,7 @@ const App = () => {
         return;
       }
 
+      let decoder = new TextDecoderStream();
       const reader = response.body.pipeThrough(decoder).getReader();
 
       while (true) {
@@ -102,7 +93,7 @@ const App = () => {
           ))}
         </div>
         <div className="form">
-          <input
+          <TextField
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={(e) => {
@@ -110,8 +101,11 @@ const App = () => {
                 handleSubmit(e);
               }
             }}
-            type="text"
-            placeholder="Send a message"
+            id="outlined-multiline-flexible"
+            label="Send a message"
+            multiline
+            maxRows={4}
+            className="input"
           />
           <Button
             onClick={handleSubmit}
