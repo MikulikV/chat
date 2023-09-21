@@ -7,20 +7,14 @@ import { useState } from "react";
 
 const App = () => {
   const [inputValue, setInputValue] = useState("");
-  // const [question, setQuestion] = useState("");
-  // const [promptResponse, setPromptResponse] = useState("");
   const [messages, setMessages] = useState([]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     // setLoading(true);
-    // setQuestion(inputValue);
-    // setMessages([
-    //   ...messages,
-    //   { role: "assistant", content: "How can I help you?" },
-    // ]);
+    setInputValue("");
     const url = "http://localhost:8080/api/chat";
-    let tmpPromptResponse = "";
+    let currentAnswer = "";
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -33,6 +27,20 @@ const App = () => {
         }),
       });
 
+      const currentDate = new Date();
+
+      // Timestamp
+      const MM = String(currentDate.getMonth() + 1).padStart(2, "0");
+      const DD = String(currentDate.getDate()).padStart(2, "0");
+      const HH = currentDate.getHours();
+      const ampm = HH >= 12 ? "PM" : "AM";
+      const H =
+        HH > 12
+          ? String(HH - 12).padStart(2, "0")
+          : String(HH).padStart(2, "0");
+      const M = String(currentDate.getMinutes()).padStart(2, "0");
+      const timestamp = `${MM}/${DD} ${H}:${M} ${ampm}`;
+
       // eslint-disable-next-line no-undef
       let decoder = new TextDecoderStream();
       if (!response.body) return;
@@ -44,19 +52,17 @@ const App = () => {
         if (done) {
           break;
         } else {
-          tmpPromptResponse += value;
-          // setPromptResponse(tmpPromptResponse);
+          currentAnswer += value;
           setMessages([
             ...messages,
-            { role: "user", content: inputValue },
-            { role: "assistant", content: tmpPromptResponse },
+            { role: "user", content: inputValue, timestamp: timestamp },
+            { role: "assistant", content: currentAnswer, timestamp: timestamp },
           ]);
         }
       }
     } catch (error) {
       console.log(error);
     } finally {
-      setInputValue("");
       // setLoading(false);
     }
   };
@@ -72,7 +78,7 @@ const App = () => {
               key={index}
               role={message.role}
               message={message.content}
-              timestamp="MM/DD 00:00"
+              timestamp={message.timestamp}
             />
           ))}
         </div>

@@ -26,6 +26,7 @@ def index():
 
 max_response_tokens = 500
 token_limit= 4000
+prompt = "You are a helpful assistant, your name is CBN Assistant. You are a Christian and your task is to help people to be better."
 
 # def num_tokens_from_messages(messages, model="gpt-3.5-turbo"):
 #     encoding = tiktoken.encoding_for_model(model)
@@ -44,8 +45,13 @@ token_limit= 4000
 def chat():
     if request.method == 'POST':
         user_input = request.json.get('user_input')
-        conversation = request.json.get('conversation', [{"role": "system", "content": "You are a helpful assistant."}])
+        conversation = request.json.get('conversation')
         
+        # Delete timestamp key from messages
+        for obj in conversation:
+            if "timestamp" in obj:
+                del obj["timestamp"]
+
         conversation.append({"role": "user", "content": user_input})
 
         # num_tokens = num_tokens_from_messages(conversation)
@@ -63,9 +69,9 @@ def chat():
 
             data = {
                 'model': 'gpt-3.5-turbo',
-                'messages': conversation,
+                'messages': [{"role": "system", "content": prompt}, *conversation],
                 'temperature': 0, 
-                'max_tokens': token_limit,
+                'max_tokens': max_response_tokens,
                 'stream': True,            
             }
 
@@ -78,10 +84,7 @@ def chat():
                         yield(text)
                     except:
                         yield('')
-        
-        # conversation.append({"role": "assistant", "content": stream_with_context(generate())})
 
-        # return Response(conversation)
         return Response(stream_with_context(generate()))
         # except RateLimitError:
         #     return Response("The server is experiencing a high volume of requests. Please try again later.")
