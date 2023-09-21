@@ -8,13 +8,26 @@ import { useState } from "react";
 const App = () => {
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // setLoading(true);
+    setLoading(true);
     setInputValue("");
     const url = "http://localhost:8080/api/chat";
     let currentAnswer = "";
+
+    // Timestamp
+    const currentDate = new Date();
+    const MM = String(currentDate.getMonth() + 1).padStart(2, "0");
+    const DD = String(currentDate.getDate()).padStart(2, "0");
+    const HH = currentDate.getHours();
+    const ampm = HH >= 12 ? "PM" : "AM";
+    const H =
+      HH > 12 ? String(HH - 12).padStart(2, "0") : String(HH).padStart(2, "0");
+    const M = String(currentDate.getMinutes()).padStart(2, "0");
+    const timestamp = `${MM}/${DD} ${H}:${M} ${ampm}`;
+
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -27,23 +40,20 @@ const App = () => {
         }),
       });
 
-      const currentDate = new Date();
-
-      // Timestamp
-      const MM = String(currentDate.getMonth() + 1).padStart(2, "0");
-      const DD = String(currentDate.getDate()).padStart(2, "0");
-      const HH = currentDate.getHours();
-      const ampm = HH >= 12 ? "PM" : "AM";
-      const H =
-        HH > 12
-          ? String(HH - 12).padStart(2, "0")
-          : String(HH).padStart(2, "0");
-      const M = String(currentDate.getMinutes()).padStart(2, "0");
-      const timestamp = `${MM}/${DD} ${H}:${M} ${ampm}`;
-
-      // eslint-disable-next-line no-undef
       let decoder = new TextDecoderStream();
-      if (!response.body) return;
+      if (!response.body) {
+        setMessages([
+          ...messages,
+          { role: "user", content: inputValue, timestamp: timestamp },
+          {
+            role: "assistant",
+            content: "No response received. Please try again.",
+            timestamp: timestamp,
+          },
+        ]);
+        return;
+      }
+
       const reader = response.body.pipeThrough(decoder).getReader();
 
       while (true) {
@@ -62,8 +72,17 @@ const App = () => {
       }
     } catch (error) {
       console.log(error);
+      setMessages([
+        ...messages,
+        { role: "user", content: inputValue, timestamp: timestamp },
+        {
+          role: "assistant",
+          content: "An error occurred. Please try again.",
+          timestamp: timestamp,
+        },
+      ]);
     } finally {
-      // setLoading(false);
+      setLoading(false);
     }
   };
   return (
@@ -84,8 +103,13 @@ const App = () => {
         </div>
         <div className="form">
           <input
-            onChange={(e) => setInputValue(e.target.value)}
             value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && inputValue !== "") {
+                handleSubmit(e);
+              }
+            }}
             type="text"
             placeholder="Send a message"
           />
@@ -94,6 +118,7 @@ const App = () => {
             variant="contained"
             color="primary"
             className="button"
+            disabled={inputValue === "" || loading}
           >
             <SendIcon />
           </Button>
