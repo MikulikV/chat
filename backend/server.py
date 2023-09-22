@@ -4,7 +4,7 @@ import requests
 import sseclient
 import os
 import tiktoken
-# from openai.error import RateLimitError
+from openai.error import RateLimitError
 
 from dotenv import load_dotenv 
 
@@ -64,36 +64,37 @@ def chat():
             del conversation[1] 
             num_tokens = num_tokens_from_messages(conversation)
 
-        # try:
-        def generate():
-            url = 'https://api.openai.com/v1/chat/completions'
-            headers = {
-                'content-type': 'application/json; charset=utf-8',
-                'Authorization': f"Bearer {OPENAI_API_KEY}"            
-            }
+        try:
+            def generate():
+                url = 'https://api.openai.com/v1/chat/completions'
+                headers = {
+                    'content-type': 'application/json; charset=utf-8',
+                    'Authorization': f"Bearer {OPENAI_API_KEY}"            
+                }
 
-            data = {
-                'model': 'gpt-3.5-turbo',
-                'messages': [{"role": "system", "content": prompt}, *conversation],
-                'temperature': 0, 
-                'max_tokens': max_response_tokens,
-                'stream': True,            
-            }
+                data = {
+                    'model': 'gpt-3.5-turbo',
+                    'messages': [{"role": "system", "content": prompt}, *conversation],
+                    'temperature': 0, 
+                    'max_tokens': max_response_tokens,
+                    'stream': True,            
+                }
 
-            response = requests.post(url, headers=headers, data=json.dumps(data), stream=True)
-            client = sseclient.SSEClient(response)
-            for event in client.events():
-                if event.data != '[DONE]':
-                    try:
-                        text = json.loads(event.data)['choices'][0]['delta']['content']
-                        yield(text)
-                    except:
-                        yield('')
+                completion = requests.post(url, headers=headers, data=json.dumps(data), stream=True)
+                client = sseclient.SSEClient(completion)
+                for event in client.events():
+                    if event.data != '[DONE]':
+                        try:
+                            text = json.loads(event.data)['choices'][0]['delta']['content']
+                            yield(text)
+                        except:
+                            yield('')
 
-        return Response(stream_with_context(generate()))
-        # except RateLimitError:
-        #     return Response("The server is experiencing a high volume of requests. Please try again later.")
-
+            response = stream_with_context(generate())
+        except RateLimitError:
+            response = "The server is experiencing a high volume of requests. Please try again later."
+        
+        return Response(response)
 
 if __name__ == '__main__':
     app.run(port=8080, debug=True)
