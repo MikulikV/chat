@@ -25,12 +25,25 @@ code {
   max-width: 800px;
   background-color: #fff;
   border-radius: 5px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.title {
+  width: 100%;
+}
+.delete-btn {
+  position: absolute;
+  right: 0px;
 }
 h1,
 p {
@@ -92,13 +105,13 @@ p {
   margin-top: 20px;
   margin-right: 20px;
   padding: 10px 10px 20px 10px;
-  background-color: #f8e896;
+  background-color: #dedede;
   min-width: 10%;
   max-width: 60%;
   margin-left: 40%;
   text-align: left;
   font: 400 0.9em "Open Sans" sans-serif;
-  border: 1px solid #dfd087;
+  border: 1px solid #c3c3c3;
   border-radius: 10px;
   word-wrap: break-word;
 }
@@ -107,7 +120,7 @@ p {
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 15px solid #f8e896;
+  border-top: 15px solid #dedede;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   top: 0;
@@ -118,7 +131,7 @@ p {
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 17px solid #dfd087;
+  border-top: 17px solid #c3c3c3;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
   top: -1px;
@@ -126,13 +139,13 @@ p {
 }
 .timestamp {
   position: absolute;
-  font-size: 0.55em;
+  font-size: 0.7em;
   font-weight: 300;
   margin-top: 10px;
   bottom: 1px;
   right: 5px;
 }
-.form {
+.user-input {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -141,14 +154,10 @@ p {
 .input {
   width: 100%;
 }
-.form button {
+.user-input button {
   height: 56px;
 }
-@media (max-width: 350px) {
-  .avatar {
-    display: none;
-  }
-}
+/* Scroll styles */
 ::-webkit-scrollbar {
   height: 6px;
   width: 6px;
@@ -159,4 +168,31 @@ p {
 ::-webkit-scrollbar-thumb {
   background-color: #c3c3c3;
   border-radius: 20px;
+}
+/* Media */
+@media (max-width: 820px) {
+  .assistant .message,
+  .user .message {
+    min-width: 15%;
+  }
+}
+@media (max-width: 550px) {
+  .assistant .message,
+  .user .message {
+    min-width: 20%;
+  }
+}
+@media (max-width: 400px) {
+  .assistant .message,
+  .user .message {
+    min-width: 25%;
+  }
+}
+@media (max-width: 350px) {
+  header {
+    text-align: left;
+  }
+  .avatar {
+    display: none;
+  }
 }
