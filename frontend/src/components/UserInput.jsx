@@ -30,9 +30,7 @@ const UserInput = (props) => {
         className="input"
       />
       <Button
-        onClick={(e) => {
-          sendMessage(e);
-        }}
+        onClick={sendMessage}
         variant="contained"
         color="primary"
         disabled={inputValue === "" || props.loading}

@@ -1,12 +1,7 @@
 import { getTimeStamp } from "../utils/dateUtils";
+import axios from "axios";
 
-export const getMessages = async (
-  inputValue,
-  messages,
-  setMessages,
-  setLoading
-) => {
-  setLoading(true);
+export const getMessages = async (inputValue, messages, setMessages) => {
   const url = "http://localhost:8080/api/chat";
   let currentAnswer = "";
   const timestamp = getTimeStamp();
@@ -64,7 +59,28 @@ export const getMessages = async (
         timestamp: timestamp,
       },
     ]);
+  }
+};
+
+export const getLangchainAnswer = async (inputValue, messages, setMessages) => {
+  const url = "http://localhost:8080/api/langchain";
+  let answer = "";
+  const timestamp = getTimeStamp();
+
+  try {
+    const response = await axios.post(url, {
+      user_input: inputValue,
+    });
+
+    answer = response.data;
+  } catch (error) {
+    console.log(error);
+    answer = "An error occurred. Please try again.";
   } finally {
-    setLoading(false);
+    setMessages([
+      ...messages,
+      { role: "user", content: inputValue, timestamp: timestamp },
+      { role: "assistant", content: answer, timestamp: timestamp },
+    ]);
   }
 };

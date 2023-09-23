@@ -1,11 +1,11 @@
-from flask import Flask, request, Response, stream_with_context, json
+from flask import Flask, request, Response, stream_with_context, json, jsonify
 from flask_cors import CORS, cross_origin
 import requests
 import sseclient
 import os
 import tiktoken
 from openai.error import RateLimitError
-
+from cbnlangchain.qa import create_chain
 from dotenv import load_dotenv 
 
 # OPENAI_API_KEY
@@ -95,6 +95,18 @@ def chat():
             response = "The server is experiencing a high volume of requests. Please try again later."
         
         return Response(response)
+    
+@app.route('/api/langchain', methods=['GET', 'POST'])
+@cross_origin()  # CORS
+def langchain():
+    if request.method == 'POST':
+        user_input = request.json.get('user_input')
+        chain = create_chain()
+        response = chain({"question": user_input})
+
+        return jsonify(response['answer'])
+        
+        
 
 if __name__ == '__main__':
     app.run(port=8080, debug=True)
