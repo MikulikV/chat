@@ -2,7 +2,7 @@ import { getTimeStamp } from "../utils/dateUtils";
 import axios from "axios";
 
 export const getMessages = async (inputValue, messages, setMessages) => {
-  const url = "http://localhost:8080/api/chat";
+  const url = "http://localhost:8080/api/retrieval";
   let currentAnswer = "";
   const timestamp = getTimeStamp();
 
