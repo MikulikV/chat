@@ -1,23 +1,28 @@
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI
-from langchain.vectorstores.chroma import Chroma
+from langchain.vectorstores import Pinecone
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationTokenBufferMemory
+import openai
+import pinecone
 import os
 from dotenv import load_dotenv 
 
-# OPENAI_API_KEY
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY")
+pinecone.init(
+    api_key=os.getenv("PINECONE_API_KEY"), 
+    environment=os.getenv("PINECONE_ENV"), 
+)
+index_name = "cbn-demo"
 
 # Define vector store
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
-vector_store = Chroma(
-    collection_name="Database",
-    embedding_function=embeddings,
-    persist_directory="backend/cbnlangchain/docs/chroma",
+vector_store = Pinecone.from_existing_index(
+    embedding=embeddings,
+    index_name=index_name,
 )
 
 # Define prompts

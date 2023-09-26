@@ -4,29 +4,19 @@ import requests
 import sseclient
 import os
 import tiktoken
-import pinecone
 import openai
 from openai.error import RateLimitError
 from cbnlangchain.qa import create_chain
+from cbnpinecone import get_context
 from dotenv import load_dotenv 
 
-# OPENAI_API_KEY
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# to deploy in Azure
-# OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
-# initialize connection to pinecone
-pinecone.init(
-    api_key=os.getenv("PINECONE_API_KEY"), 
-    environment=os.getenv("PINECONE_ENV"), 
-)
-embed_model = "text-embedding-ada-002"
+# const
+openai.api_key = os.environ["OPENAI_API_KEY"]
 max_response_tokens = 500
 token_limit= 4000
-prompt = "You are a helpful assistant, your name is CBN Assistant."
-index_name = "cbn-demo"
-
+prompt = "You are a helpful assistant, your name is CBN Assistant. You are a Christian and your task is to help people to be better."
 
 app = Flask(__name__)
 # handle cors
@@ -120,15 +110,7 @@ def retrieval():
                 del obj["timestamp"]
         
         # get relevant contexts
-        embedding = openai.Embedding.create(
-            input=[user_input],
-            engine=embed_model
-        )
-        index = pinecone.Index(index_name)
-        embedded_question = embedding['data'][0]['embedding']
-        retrieved_data = index.query(vector=embedded_question, top_k=4, include_metadata=True)
-        contexts = [item['metadata']['text'] for item in retrieved_data['matches']]
-        augmented_query = "\n\n---\n\n".join(contexts)+"\n\n-----\n\n" + user_input
+        augmented_query = get_context(user_input)
         conversation.append({"role": "user", "content": augmented_query})
 
         # Delete messages from memory to avoid model's token limit
