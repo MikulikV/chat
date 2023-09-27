@@ -8,6 +8,7 @@ from openai.error import RateLimitError
 from cbn_langchain.qa import create_chain
 from cbn_openai.vector_store import get_context
 from cbn_openai.utils.count_tokens import delete_previous_messages
+from cbn_openai.tools import functions, get_current_weather
 from dotenv import load_dotenv 
 
 load_dotenv()
@@ -62,19 +63,54 @@ def chat():
                     'model': model,
                     'messages': [{"role": "system", "content": prompt}, *conversation],
                     'temperature': temperature, 
+                    'functions': functions,
+                    'function_call': "auto",
                     'max_tokens': max_response_tokens,
                     'stream': True,            
                 }
 
                 completion = requests.post(url, headers=headers, data=json.dumps(data), stream=True)
                 client = sseclient.SSEClient(completion)
+                function_name = ""
+                function_args = ""
+                flag = False
                 for event in client.events():
                     if event.data != '[DONE]':
                         try:
-                            text = json.loads(event.data)['choices'][0]['delta']['content']
+                            content = json.loads(event.data)['choices'][0]['delta']
+                            text = content.get("content", "")
+                            if content.get("function_call"):
+                                flag = True
+                                function_name += content["function_call"].get("name", "")
+                                function_args += content["function_call"].get("arguments", "")
+                            else:
+                                yield(text)
+                        except Exception as e:
+                            yield('Error: ' + e)
+
+                if flag:
+                    available_functions = {
+                        "get_current_weather": get_current_weather,
+                    }  # only one function in this example, but you can have multiple
+                    function_to_call = available_functions[function_name]
+                    function_args = json.loads(function_args)
+                    function_response = function_to_call(**function_args)
+                    # Step 4: send the info on the function call and function response to GPT
+                    conversation.append({ "role": "assistant", "content": f"{content}", "function_call": {"name": function_name, "arguments": f"{function_args}"} })  # extend conversation with assistant's reply
+                    conversation.append({ "role": "function", "name": function_name, "content": function_response })  # extend conversation with function response
+                    second_response = openai.ChatCompletion.create(
+                        model="gpt-3.5-turbo",
+                        messages=conversation,
+                        stream=True
+                    )  # get a new response from GPT where it can see the function response
+                    try:
+                        for chunk in second_response:
+                            content = chunk["choices"][0]["delta"]
+                            text = content.get("content", "")
                             yield(text)
-                        except:
-                            yield('')
+                    except Exception as e:
+                        print('Error: ', e)
+                        return 503
 
             response = stream_with_context(generate())
         except RateLimitError:
