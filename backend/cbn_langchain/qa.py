@@ -8,6 +8,7 @@ from langchain.memory import ConversationTokenBufferMemory
 import openai
 import pinecone
 import os
+from config import TEMPERATURE, INDEX_NAME, EMBED_MODEL, MODEL
 from dotenv import load_dotenv 
 
 load_dotenv()
@@ -16,13 +17,12 @@ pinecone.init(
     api_key=os.getenv("PINECONE_API_KEY"), 
     environment=os.getenv("PINECONE_ENV"), 
 )
-index_name = "cbn-demo"
 
 # Define vector store
-embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
+embeddings = OpenAIEmbeddings(model=EMBED_MODEL)
 vector_store = Pinecone.from_existing_index(
     embedding=embeddings,
-    index_name=index_name,
+    index_name=INDEX_NAME,
 )
 
 # Define prompts
@@ -82,9 +82,9 @@ memory = ConversationTokenBufferMemory(
 
 
 # Define chain
-def create_chain(temperature):    
+def create_chain():    
     chain = ConversationalRetrievalChain.from_llm(
-        llm=ChatOpenAI(model="gpt-3.5-turbo", temperature=temperature), 
+        llm=ChatOpenAI(model=MODEL, temperature=TEMPERATURE), 
         chain_type="stuff", 
         retriever=vector_store.as_retriever(search_type="similarity", search_kwargs={"k": 4}), 
         condense_question_prompt=q_prompt,
