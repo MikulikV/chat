@@ -1,9 +1,10 @@
 import React from "react";
-import { useState } from "react";
-import { getLangchainAnswer, getMessages } from "./api/api";
 import Header from "./components/Header";
 import UserInput from "./components/UserInput";
 import Conversation from "./components/Conversation";
+import { useState } from "react";
+import { getLangchainAnswer, getMessages } from "./api/api";
+import { getTimeStamp } from "./utils/dateUtils";
 
 const App = () => {
   const [messages, setMessages] = useState([]);
@@ -11,11 +12,31 @@ const App = () => {
   const [model, setModel] = useState("OpenAI");
 
   const handleSubmit = async (inputValue) => {
+    const userTimestamp = getTimeStamp();
+    const userMessage = {
+      role: "user",
+      content: inputValue,
+      timestamp: userTimestamp,
+    };
+    setMessages([...messages, userMessage]);
     setLoading(true);
     if (model === "OpenAI") {
-      await getMessages(inputValue, messages, setMessages);
+      for await (const message of getMessages(inputValue, messages)) {
+        const timestamp = getTimeStamp();
+        setMessages([
+          ...messages,
+          userMessage,
+          { role: "assistant", content: message, timestamp: timestamp },
+        ]);
+      }
     } else if (model === "Langchain") {
-      await getLangchainAnswer(inputValue, messages, setMessages);
+      let answer = await getLangchainAnswer(inputValue, messages, setMessages);
+      const timestamp = getTimeStamp();
+      setMessages([
+        ...messages,
+        userMessage,
+        { role: "assistant", content: answer, timestamp: timestamp },
+      ]);
     }
     setLoading(false);
   };
