@@ -1,13 +1,10 @@
 import tiktoken
-
-model = "gpt-3.5-turbo"
-token_limit = 4000
-max_response_tokens = 500
+from config import MODEL, TOKEN_LIMIT, MAX_RESPONSE_TOKENS
 
 
 def num_tokens_from_messages(messages):
     """Count tokens of the conversation"""
-    encoding = tiktoken.encoding_for_model(model)
+    encoding = tiktoken.encoding_for_model(MODEL)
     num_tokens = 0
     for message in messages:
         num_tokens += 4  # every message follows <im_start>{role/name}\n{content}<im_end>\n
@@ -23,7 +20,7 @@ def num_tokens_from_messages(messages):
 def delete_previous_messages(conversation):
     """Delete messages from memory to avoid model's token limit"""
     num_tokens = num_tokens_from_messages(conversation)
-    while (num_tokens+max_response_tokens >= token_limit):
+    while (num_tokens + MAX_RESPONSE_TOKENS >= TOKEN_LIMIT):
         del conversation[1] 
         num_tokens = num_tokens_from_messages(conversation)
 

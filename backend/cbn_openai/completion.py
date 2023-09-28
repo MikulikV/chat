@@ -4,14 +4,11 @@ import requests
 import sseclient
 import os
 from dotenv import load_dotenv
+from config import MODEL, TEMPERATURE, MAX_RESPONSE_TOKENS
 from cbn_openai.tools import functions, get_current_weather
 
 load_dotenv()
 openai.api_key = os.environ["OPENAI_API_KEY"]
-model = "gpt-3.5-turbo"
-token_limit = 4000
-temperature = 0
-max_response_tokens = 500
 available_functions = {
     "get_current_weather": get_current_weather,
 }
@@ -25,12 +22,12 @@ def generate(conversation):
         'Authorization': f"Bearer {openai.api_key}"            
     }
     data = {
-        'model': model,
+        'model': MODEL,
         'messages': conversation,
-        'temperature': temperature, 
+        'temperature': TEMPERATURE, 
         'functions': functions,
         'function_call': "auto",
-        'max_tokens': max_response_tokens,
+        'max_tokens': MAX_RESPONSE_TOKENS,
         'stream': True,            
     }
 
@@ -63,7 +60,7 @@ def generate(conversation):
         # Send the info on the function call and function response to GPT
         conversation.append({ "role": "assistant", "content": f"{content}", "function_call": {"name": function_name, "arguments": f"{function_args}"} })  # extend conversation with assistant's reply
         conversation.append({ "role": "function", "name": function_name, "content": function_response })  # extend conversation with function response
-        yield from generate(conversation)
+        yield from generate(conversation) # generate second response
     
 
         
