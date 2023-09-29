@@ -5,12 +5,13 @@ import sseclient
 import os
 from dotenv import load_dotenv
 from config import MODEL, TEMPERATURE, MAX_RESPONSE_TOKENS
-from cbn_openai.tools import functions, get_current_weather
+from cbn_openai.tools import functions, get_current_weather, get_information_from_CBN_website
 
 load_dotenv()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 available_functions = {
     "get_current_weather": get_current_weather,
+    "get_information_from_CBN_website": get_information_from_CBN_website,
 }
 
 
@@ -57,6 +58,7 @@ def generate(conversation):
         function_to_call = available_functions[function_name]
         function_args = json.loads(function_args)
         function_response = function_to_call(**function_args)
+        print(function_response)
         # Send the info on the function call and function response to GPT
         conversation.append({ "role": "assistant", "content": f"{content}", "function_call": {"name": function_name, "arguments": f"{function_args}"} })  # extend conversation with assistant's reply
         conversation.append({ "role": "function", "name": function_name, "content": function_response })  # extend conversation with function response

@@ -1,5 +1,11 @@
 import json
 import requests
+import os
+from elastic_site_search import Client
+from config import SEARCH_ENGINE
+
+search_api_key = os.environ["SEARCH_API_KEY"]
+client = Client(api_key=search_api_key)
 
 functions = [
     {
@@ -15,6 +21,20 @@ functions = [
                 "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]},
             },
             "required": ["location"],
+        },
+    },
+    {
+        "name": "get_information_from_CBN_website",
+        "description": "Get necessary information from CBN website",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "key_word": {
+                    "type": "string",
+                    "description": "The key word or phrase, e.g. faith or Orphan's Promise",
+                },
+            },
+            "required": ["key_word"],
         },
     }
 ]
@@ -46,4 +66,18 @@ def get_current_weather(location, unit="fahrenheit"):
         "unit": unit,
         "forecast": weather_codes[current_weather["weathercode"]],
     }
+    print(json.dumps(weather_info))
     return json.dumps(weather_info)
+
+
+def get_information_from_CBN_website(key_word):
+    """Get necessary information from CBN website"""
+    results = client.search(SEARCH_ENGINE, key_word)
+    page = results["body"]["records"]["page"][0] # get information from the first page found
+    cbn_info = {
+        "title": page["title"],
+        "url": page["url"],
+        "body": page["body"],
+    }
+    
+    return json.dumps(cbn_info)

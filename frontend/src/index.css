@@ -79,6 +79,7 @@ p {
   font: 400 0.9em "Open Sans" sans-serif;
   border: 1px solid #97c6e3;
   border-radius: 10px;
+  word-wrap: break-word;
 }
 .assistant .message:after {
   content: "";
