@@ -24,14 +24,14 @@ functions = [
         },
     },
     {
-        "name": "get_information_from_CBN_website",
-        "description": "Get necessary information from CBN website",
+        "name": "get_real_time_information",
+        "description": "Get the real-time (up-to-date) information",
         "parameters": {
             "type": "object",
             "properties": {
                 "key_word": {
                     "type": "string",
-                    "description": "The key word or phrase, e.g. faith or Orphan's Promise",
+                    "description": "The key word or phrase, e.g. Earthquake in Turkey or Striking United Auto Workers",
                 },
             },
             "required": ["key_word"],
@@ -70,13 +70,14 @@ def get_current_weather(location, unit="fahrenheit"):
     return json.dumps(weather_info)
 
 
-def get_information_from_CBN_website(key_word):
-    """Get necessary information from CBN website"""
-    results = client.search(SEARCH_ENGINE, key_word)
+def get_real_time_information(key_word):
+    """Get the real-time (up-to-date) information"""
+    results = client.search(SEARCH_ENGINE, key_word, {"filters": {"Content Types": "Articles"}})
+    print(key_word)
     page = results["body"]["records"]["page"][0] # get information from the first page found
     cbn_info = {
         "title": page["title"],
-        "url": page["url"],
+        # "url": page["url"],
         "body": page["body"],
     }
     
