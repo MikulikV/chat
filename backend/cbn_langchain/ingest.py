@@ -8,6 +8,7 @@ import re
 import tiktoken
 import os
 from dotenv import load_dotenv 
+from config import EMBED_MODEL, INDEX_NAME
 
 # functions to prepare the data
 def fix_newlines(text):
@@ -103,7 +104,6 @@ if __name__ == "__main__":
         "https://cbn.com/superbook/faq-episodes.aspx", 
         "https://us-en.superbook.cbn.com/faq"
         "https://us-en.superbook.cbn.com/congratulations",
-        "https://appscdn.superbook.cbn.com/api/bible/app_qanda.json/?lang=en&f=all&id=1&vid=13653741",
         "https://appscdn.superbook.cbn.com/api/bible/app_profiles.json/?lang=en&f=all&id=0&sort=null&r=100000&vid=13653741"
         "https://appscdn.superbook.cbn.com/api/bible/app_games.json/?lang=en&f=trivia&id=0&sort=null&r=100000&vid=13653741&result_version=2",
         "https://appscdn.superbook.cbn.com/api/bible/app_gospel/?lang=en&vid=13653741",
@@ -116,7 +116,7 @@ if __name__ == "__main__":
     result_chunks = [doc for doc in chunks if tiktoken_len(doc.page_content) >= 100] # chunks more than chunk_overlap
 
     # embed text and store embeddings
-    embedding = OpenAIEmbeddings(model="text-embedding-ada-002")
+    embedding = OpenAIEmbeddings(model=EMBED_MODEL)
 
     # initialize pinecone
     pinecone.init(
@@ -124,12 +124,11 @@ if __name__ == "__main__":
         environment=os.getenv("PINECONE_ENV"), 
     )
 
-    index_name = "cbn-demo"
     # First, check if our index already exists. If it doesn't, we create it
-    if index_name not in pinecone.list_indexes():
+    if INDEX_NAME not in pinecone.list_indexes():
         # we create a new index
         pinecone.create_index(
-        name=index_name,
+        name=INDEX_NAME,
         metric='cosine',
         dimension=1536,  
     )
@@ -137,7 +136,7 @@ if __name__ == "__main__":
     vector_store = Pinecone.from_documents(
         documents=result_chunks,
         embedding=embedding,
-        index_name=index_name,
+        index_name=INDEX_NAME,
     )
 
 

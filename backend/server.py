@@ -2,6 +2,8 @@ from flask import Flask, request, Response, stream_with_context, jsonify
 from flask_cors import CORS, cross_origin
 from openai.error import RateLimitError
 from cbn_langchain.qa import create_chain
+from cbn_openai.utils.count_tokens import delete_previous_messages
+from cbn_openai.vector_store import get_context
 from cbn_openai.utils.process_messages import process_messages
 from cbn_openai.completion import generate
 
@@ -24,7 +26,10 @@ def chat():
     if request.method == 'POST':
         user_input = request.json.get('user_input')
         conversation = request.json.get('conversation')
-        conversation = process_messages(user_input, conversation)
+        conversation = process_messages(conversation)
+        augmented_query = get_context(user_input) # get relevant contexts
+        conversation.append({"role": "user", "content": augmented_query})
+        conversation = delete_previous_messages(conversation) # delete messages from memory to avoid model's token limit
 
         try:
             response = stream_with_context(generate(conversation))

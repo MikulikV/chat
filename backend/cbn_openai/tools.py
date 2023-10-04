@@ -72,8 +72,9 @@ def get_current_weather(location, unit="fahrenheit"):
 
 def get_real_time_information(key_word):
     """Get the real-time (up-to-date) information"""
-    results = client.search(SEARCH_ENGINE, key_word, {"filters": {"Content Types": "Articles"}})
+    results = client.search(SEARCH_ENGINE, key_word, {"filters": {"content_type": "article"}})
     print(key_word)
+    print(results)
     page = results["body"]["records"]["page"][0] # get information from the first page found
     cbn_info = {
         "title": page["title"],
