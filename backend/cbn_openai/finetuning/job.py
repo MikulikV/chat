@@ -5,13 +5,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
-file_id = "file-4hafORH93ozbNsNQ3g7Oij80"
+file_id = "file-mAVL3cm6yd7WxKdjEBj3EIN4"
 model_name = "gpt-3.5-turbo"
 
 response = openai.FineTuningJob.create(
     training_file=file_id,
     model=model_name,
-    suffix="cbn-model",
+    suffix="SB-with-10-laws",
 )
 job_id = response["id"]
 

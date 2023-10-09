@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
-dataset = "backend/cbn_openai/finetuning/test_dataset.jsonl"
+dataset = "backend/data/second_time.jsonl"
 
 response = openai.File.create(
   file=open(dataset, "rb"),

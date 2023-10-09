@@ -106,8 +106,6 @@ if __name__ == "__main__":
         "https://us-en.superbook.cbn.com/congratulations",
         "https://appscdn.superbook.cbn.com/api/bible/app_profiles.json/?lang=en&f=all&id=0&sort=null&r=100000&vid=13653741"
         "https://appscdn.superbook.cbn.com/api/bible/app_games.json/?lang=en&f=trivia&id=0&sort=null&r=100000&vid=13653741&result_version=2",
-        "https://appscdn.superbook.cbn.com/api/bible/app_gospel/?lang=en&vid=13653741",
-        "https://appscdn.superbook.cbn.com/api/bible/app_multimedia.json/?lang=en&f=all&id=0&sort=null&r=100000&vid=13653741"
     ])
     documents.extend(web_loader.load())
     # clean and split loaded files

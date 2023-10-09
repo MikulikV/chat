@@ -3,7 +3,7 @@ import tiktoken
 import numpy as np
 from collections import defaultdict
 
-dataset = "backend/cbn_openai/finetuning/test_dataset.jsonl"
+dataset = "backend/data/second_time.jsonl"
 
 # Load the dataset
 with open(dataset, 'r', encoding='utf-8') as f:

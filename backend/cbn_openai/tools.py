@@ -31,7 +31,7 @@ functions = [
             "properties": {
                 "key_word": {
                     "type": "string",
-                    "description": "The key word or phrase, e.g. Earthquake in Turkey or Striking United Auto Workers",
+                    "description": "The key word or phrase, e.g. Earthquake in Turkey",
                 },
             },
             "required": ["key_word"],
@@ -66,20 +66,17 @@ def get_current_weather(location, unit="fahrenheit"):
         "unit": unit,
         "forecast": weather_codes[current_weather["weathercode"]],
     }
-    print(json.dumps(weather_info))
     return json.dumps(weather_info)
 
 
 def get_real_time_information(key_word):
     """Get the real-time (up-to-date) information"""
-    results = client.search(SEARCH_ENGINE, key_word, {"filters": {"content_type": "article"}})
+    results = client.search(SEARCH_ENGINE, key_word, {"filters": {"page": {"type": "special_page"}}})
     print(key_word)
     print(results)
-    page = results["body"]["records"]["page"][0] # get information from the first page found
+    info = [page["body"] for page in results["body"]["records"]["page"][:2]] # get information from first 3 pages
     cbn_info = {
-        "title": page["title"],
-        # "url": page["url"],
-        "body": page["body"],
+        "information": (" ").join(info),
     }
-    
+    # print(json.dumps(cbn_info))
     return json.dumps(cbn_info)
