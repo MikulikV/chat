@@ -23,20 +23,20 @@ functions = [
             "required": ["location"],
         },
     },
-    {
-        "name": "get_real_time_information",
-        "description": "Get the real-time (up-to-date) information",
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "key_word": {
-                    "type": "string",
-                    "description": "The key word or phrase, e.g. Earthquake in Turkey",
-                },
-            },
-            "required": ["key_word"],
-        },
-    }
+    # {
+    #     "name": "get_real_time_information",
+    #     "description": "Get the real-time (up-to-date) information",
+    #     "parameters": {
+    #         "type": "object",
+    #         "properties": {
+    #             "key_word": {
+    #                 "type": "string",
+    #                 "description": "The key word or phrase, e.g. Earthquake in Turkey",
+    #             },
+    #         },
+    #         "required": ["key_word"],
+    #     },
+    # }
 ]
 
 

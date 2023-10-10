@@ -102,7 +102,6 @@ if __name__ == "__main__":
         "https://www2.cbn.com/article/purpose/seven-keys-hearing-gods-voice",
         # FAQ SuperBook
         "https://cbn.com/superbook/faq-episodes.aspx", 
-        "https://us-en.superbook.cbn.com/faq"
         "https://us-en.superbook.cbn.com/congratulations",
         "https://appscdn.superbook.cbn.com/api/bible/app_profiles.json/?lang=en&f=all&id=0&sort=null&r=100000&vid=13653741"
         "https://appscdn.superbook.cbn.com/api/bible/app_games.json/?lang=en&f=trivia&id=0&sort=null&r=100000&vid=13653741&result_version=2",
