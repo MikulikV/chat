@@ -11,7 +11,7 @@ load_dotenv()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 available_functions = {
     "get_current_weather": get_current_weather,
-    # "get_real_time_information": get_real_time_information,
+    "get_real_time_information": get_real_time_information,
 }
 
 

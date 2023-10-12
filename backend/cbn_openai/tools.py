@@ -4,8 +4,6 @@ import os
 from elastic_site_search import Client
 from config import SEARCH_ENGINE
 
-search_api_key = os.environ["SEARCH_API_KEY"]
-client = Client(api_key=search_api_key)
 
 functions = [
     {
@@ -23,20 +21,20 @@ functions = [
             "required": ["location"],
         },
     },
-    # {
-    #     "name": "get_real_time_information",
-    #     "description": "Get the real-time (up-to-date) information",
-    #     "parameters": {
-    #         "type": "object",
-    #         "properties": {
-    #             "key_word": {
-    #                 "type": "string",
-    #                 "description": "The key word or phrase, e.g. Earthquake in Turkey",
-    #             },
-    #         },
-    #         "required": ["key_word"],
-    #     },
-    # }
+    {
+        "name": "get_real_time_information",
+        "description": "Get the real-time (up-to-date) information",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "key_word": {
+                    "type": "string",
+                    "description": "The key word or phrase, e.g. Pat Robertson or Earthquake in Turkey",
+                },
+            },
+            "required": ["key_word"],
+        },
+    }
 ]
 
 
@@ -71,12 +69,14 @@ def get_current_weather(location, unit="fahrenheit"):
 
 def get_real_time_information(key_word):
     """Get the real-time (up-to-date) information"""
-    results = client.search(SEARCH_ENGINE, key_word, {"filters": {"page": {"type": "special_page"}}})
+    search_api_key = os.environ["SEARCH_API_KEY"]
+    client = Client(api_key=search_api_key)
+    results = client.search(SEARCH_ENGINE, key_word, {"filters": {"entity-node": {"s_type": "article"}}})
     print(key_word)
     print(results)
-    info = [page["body"] for page in results["body"]["records"]["page"][:2]] # get information from first 3 pages
+    info = [(" ").join(page["m_rendered_item"]) for page in results["body"]["records"]["entity-node"][:1]] # get information from first 3 pages
     cbn_info = {
         "information": (" ").join(info),
     }
-    # print(json.dumps(cbn_info))
+    print(json.dumps(cbn_info))
     return json.dumps(cbn_info)
