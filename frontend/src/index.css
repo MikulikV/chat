@@ -60,6 +60,10 @@ p {
   overflow-y: auto;
   height: 100%;
 }
+.loading-bar {
+  margin: 30px auto;
+  width: 90%;
+}
 .assistant,
 .user {
   display: flex;

@@ -27,12 +27,16 @@ functions = [
         "parameters": {
             "type": "object",
             "properties": {
-                "key_word": {
+                "key_query": {
                     "type": "string",
-                    "description": "The key word or phrase, e.g. Pat Robertson or Earthquake in Turkey",
+                    "description": "The key word or phrase, e.g. What is Orphan's Promise?",
                 },
+                # "category": {
+                #     "type": "string",
+                #     "enum": ["Briefing Notes & Run Sheets", "Brands", "Programs", "Marketing Campaigns", "Product", "Prayer", "Caller Resources", "CBN PC Resources", "Digital Media"]
+                # },
             },
-            "required": ["key_word"],
+            "required": ["key_query"],
         },
     }
 ]
@@ -67,16 +71,40 @@ def get_current_weather(location, unit="fahrenheit"):
     return json.dumps(weather_info)
 
 
-def get_real_time_information(key_word):
+def get_real_time_information(key_query, category=""):
     """Get the real-time (up-to-date) information"""
-    search_api_key = os.environ["SEARCH_API_KEY"]
-    client = Client(api_key=search_api_key)
-    results = client.search(SEARCH_ENGINE, key_word, {"filters": {"entity-node": {"s_type": "article"}}})
-    print(key_word)
-    print(results)
-    info = [(" ").join(page["m_rendered_item"]) for page in results["body"]["records"]["entity-node"][:1]] # get information from first 3 pages
-    cbn_info = {
-        "information": (" ").join(info),
+    print(key_query, category)
+    url = "https://cbn.helpjuice.com/api/v3/search"
+    headers = {
+        'Authorization': os.environ["HELPJUICE_API_KEY"]           
     }
-    print(json.dumps(cbn_info))
+    categories = {
+        "Briefing Notes & Run Sheets": 290795, 
+        "Brands": 116262, 
+        "Programs": 163994,
+        "Marketing Campaigns": 146855,
+        "Product": 146856,
+        "Prayer": 116257,
+        "Caller Resources": 116263, 
+        "CBN PC Resources": 211074,
+        "Digital Media": 282186
+    }
+    filters = {
+        "query": key_query,
+        "category_id": categories[category] if category else "" 
+    }
+    response = requests.get(url, headers=headers, params=filters)
+    # search_api_key = os.environ["SEARCH_API_KEY"]
+    # client = Client(api_key=search_api_key)
+    # response = client.search(SEARCH_ENGINE, key_query, {"filters": {"entity-node": {"s_type": ["news", "article"]}}})
+    # print(key_query)
+    # print(response)
+    # info = [(" ").join(page["m_rendered_item"]) for page in response["body"]["records"]["entity-node"][:1]] # get information from first 3 pages
+    results = response.json()["searches"][:3]
+    info = [{"answer": result["long_answer_sample"], "url": result["url"]} for result in results]
+    cbn_info = {
+        "source_1": f"{info[0]}",
+        "source_2": f"{info[1]}",
+        "source_3": f"{info[2]}",
+    }
     return json.dumps(cbn_info)

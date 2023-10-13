@@ -60,7 +60,7 @@ const App = () => {
           model={model}
           changeModel={changeModel}
         />
-        <Conversation messages={messages} />
+        <Conversation messages={messages} loading={loading} />
         <UserInput handleSubmit={handleSubmit} loading={loading} />
       </div>
     </div>

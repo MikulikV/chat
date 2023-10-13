@@ -4,7 +4,7 @@ import requests
 import sseclient
 import os
 from dotenv import load_dotenv
-from config import FINE_TUNED_MODEL, TEMPERATURE, MAX_RESPONSE_TOKENS
+from config import MODEL, TEMPERATURE, MAX_RESPONSE_TOKENS
 from cbn_openai.tools import functions, get_current_weather, get_real_time_information
 
 load_dotenv()
@@ -23,7 +23,7 @@ def generate(conversation):
         'Authorization': f"Bearer {openai.api_key}"            
     }
     data = {
-        'model': FINE_TUNED_MODEL,
+        'model': MODEL,
         'messages': conversation,
         'temperature': TEMPERATURE, 
         'functions': functions,
