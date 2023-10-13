@@ -22,8 +22,8 @@ functions = [
         },
     },
     {
-        "name": "get_real_time_information",
-        "description": "Get the real-time (up-to-date) information",
+        "name": "get_actual_information",
+        "description": "Get actual information",
         "parameters": {
             "type": "object",
             "properties": {
@@ -71,8 +71,8 @@ def get_current_weather(location, unit="fahrenheit"):
     return json.dumps(weather_info)
 
 
-def get_real_time_information(key_query, category=""):
-    """Get the real-time (up-to-date) information"""
+def get_actual_information(key_query, category=""):
+    """Get actual information"""
     print(key_query, category)
     url = "https://cbn.helpjuice.com/api/v3/search"
     headers = {
@@ -102,9 +102,9 @@ def get_real_time_information(key_query, category=""):
     # info = [(" ").join(page["m_rendered_item"]) for page in response["body"]["records"]["entity-node"][:1]] # get information from first 3 pages
     results = response.json()["searches"][:3]
     info = [{"answer": result["long_answer_sample"], "url": result["url"]} for result in results]
-    cbn_info = {
-        "source_1": f"{info[0]}",
-        "source_2": f"{info[1]}",
-        "source_3": f"{info[2]}",
-    }
+    cbn_info = {}
+    if len(info) > 0:
+        for i in range(0, len(info)):
+            cbn_info[f"source_{i + 1}"] = info[i]
+            
     return json.dumps(cbn_info)
