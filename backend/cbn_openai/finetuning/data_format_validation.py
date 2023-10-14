@@ -3,7 +3,7 @@ import tiktoken
 import numpy as np
 from collections import defaultdict
 
-dataset = "backend/data/second_time.jsonl"
+dataset = "data/finetuning_data/dataset.jsonl"
 
 # Load the dataset
 with open(dataset, 'r', encoding='utf-8') as f:

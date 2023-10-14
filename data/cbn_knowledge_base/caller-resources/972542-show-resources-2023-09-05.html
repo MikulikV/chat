@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" class="pdfcrowd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+
+  <style type="text/css">
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}:root{--type-base: 1em;--type-xxxx-small: 30%;--type-xxx-small: 55%;--type-xx-small: 65%;--type-x-small: 75%;--type-small: 85%;--type-medium: 100%;--type-large: 120%;--type-x-large: 160%;--type-xx-large: 200%;--type-xxx-large: 300%;--type-xxxx-large: 400%;--color-text: #000}@media print{.question{page-break-after:always}}html{font-size:16px}body{margin:0;padding:0;font-family:'IBM Plex Sans', 'Helvetica', 'Arial', sans-serif;font-size:var(--type-base);color:var(--color-text);overflow-x:hidden}h1,h2,h3,h4{font-weight:normal;margin:20px 0 15px}h1{font-size:36px}h2{font-size:28px}h3{font-size:24px}h4{font-size:21px}p{font-size:16px;font-weight:normal;margin:0 0 20px 0;line-height:1.5}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;color:#333333;background-color:#f5f5f5;border:1px solid #cccccc;border-radius:4px}.hj-table-of-contents{margin-bottom:20px}.hj-table-of-contents i,.hj-table-of-contents .update-toc{display:none}.hj-table-of-contents h3{margin:30px 0 20px 0 !important}.hj-table-of-contents strong{font-size:16px}.hj-table-of-contents a{display:block;font-size:16px}.hj-alert-block{border-left:5px solid black;position:relative;padding:10px 20px;border-radius:0 2px 2px 0;-webkit-column-break-inside:avoid;-moz-column-break-inside:avoid;break-inside:avoid}.hj-alert-block p.hj-alert-text{margin:10px 0}.hj-alert-block h3.hj-alert-heading{margin:0 0 10px 0}.hj-alert-block div{margin:0}.hj-alert-block.hj-info-block{border-color:#2196f3;background:#daf1f8;color:#3e729f}.hj-alert-block.hj-info-block p.hj-alert-text,.hj-alert-block.hj-info-block h3.hj-alert-heading{color:#3e729f}.hj-alert-block.hj-warning-block{border-color:#ff9800;background:#f8d9ac;color:#8a6d3c}.hj-alert-block.hj-warning-block p.hj-alert-text,.hj-alert-block.hj-warning-block h3.hj-alert-heading{color:#8a6d3c}.hj-alert-block.hj-success-block{border-color:#4caf50;background:#c7e6c7;color:#4a7d61}.hj-alert-block.hj-success-block p.hj-alert-text,.hj-alert-block.hj-success-block h3.hj-alert-heading{color:#4a7d61}.hj-alert-block.hj-error-block{border-color:#f44336;background:#f4cecd;color:#a4474f}.hj-alert-block.hj-error-block p.hj-alert-text,.hj-alert-block.hj-error-block h3.hj-alert-heading{color:#a4474f}b,strong{font-weight:700}img{max-width:100%;display:block;float:none;vertical-align:top;margin:5px auto}a{color:#0560FC}a:hover,a:focus,a:active{color:#1e70fc}ul,ol{margin:0 0 10px 0;padding:0;line-height:1.5}ol ul,ul ul{margin-top:0}ol li,ul li{margin-left:1.5em;padding-left:0}i,cite,em,var,address,dfn{font-style:italic}hr{margin:20px 0;border:0;border-top:1px solid #eeeeee}code{position:relative;padding:0.25rem 0.5rem;border-radius:0.2rem;font-size:var(--type-x-small);font-family:SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace}.breadcrumb{display:none}table{width:100%;max-width:100%;border:none;border-collapse:collapse;empty-cells:show;margin-bottom:20px;background-color:transparent;border-spacing:0}table tr{line-height:200%}table th{background-color:#eeeeee;text-align:left}table th,table td{border:1px solid #dddddd;padding:5px 10px;word-break:break-word}.article-item .follow-article-form,.article-item .was-this-helpful,.article-item .fr-video{display:none}.article-item .question-author{display:-webkit-box;display:-ms-flexbox;display:flex}#glossary-article .glossary-locked-article{display:none}#glossary-article .glossary-article-header input,#glossary-article .glossary-article-header p,#glossary-article .glossary-article-header div{display:none}#glossary-article .glossary-terms h4{margin:0 0 10px}.hidden{display:none !important}article.question{width:100%;margin:0 auto}article.question header{margin-bottom:30px}article.question .info{border-bottom:1px solid #E2E5E9;padding:10px 0;width:100%}article.question .info .breadcrumbs{margin:0;padding:0}article.question .info .breadcrumbs li{display:inline;list-style-type:none;margin:0;font-size:var(--type-small);color:#97A5BA}article.question .info .breadcrumbs li::after{content:'/';display:inline-block;margin:0 8px}article.question .info .breadcrumbs li.article-name::after{content:none}article.question .info p{font-size:var(--type-small);color:#97A5BA;margin:0}article.question .info p span{text-decoration:underline}article.question .article-info .article-category{font-size:var(--type-medium)}article.question .article-info .article-name{margin:0.3em 0}article.question .article-info .article-subtitle{margin:0;font-size:var(--type-large)}article.question .author-info p{margin:0;color:#97A5BA}header.category-pdf{margin-bottom:100px !important}header.category-pdf .category-info{padding:10px 0;width:100%}header.category-pdf .category-info p{margin:0;font-size:var(--type-small)}header.category-pdf .category-info p span.category{text-decoration:underline}header.category-pdf .toc h4{font-size:var(--type-xxx-small);font-weight:normal;color:#97A5BA;text-transform:uppercase;letter-spacing:2px}header.category-pdf .toc .table-of-contents h2,header.category-pdf .toc .table-of-contents h3{margin:0}header.category-pdf .toc .table-of-contents header{margin:0 0 10px 0}header.category-pdf .toc .table-of-contents .subcategorie{list-style-type:none;margin-top:10px}header.category-pdf .toc ol{margin:0 0 0 10px;padding:0}header.category-pdf .toc ol li span{font-size:var(--type-small)}.hj-custom{position:static !important;width:100%;max-width:100% !important;-webkit-box-shadow:none !important;box-shadow:none !important;border:none !important;padding:0 !important;margin:0 0 20px;font-size:16px !important}.hj-custom div{padding:0 !important}.fa-trash-alt{display:none}
+
+  </style>
+</head>
+<body>
+  <article class="question">
+  <header>
+      <meta name="id" content="972542">
+      <meta name="category_id" content="116263">
+      <meta name="accessibility" content="0">
+      <meta name="codename" content="972542-show-resources">
+      <meta name="name" content="Show Resources">
+      <meta name="description" content="Caller Resources">
+      <meta name="published" content="true">
+
+    <div class="article-info">
+      <h1 class="article-name">Show Resources</h1>
+      <p class="article-subtitle">Caller Resources</p>
+    </div>
+
+      <div class="author-info">
+          <p>Written by Jessica Mowry | Last published at: September 05, 2023</p>
+      </div>
+    <hr>
+  </header>
+
+  <div id="hj-article-body" class="body fr-view">
+      <div><h2 data-toc="true" id="description-0">
+<span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Description</span><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color:#384C60;"> </span></span>
+</h2></div>
+<table class="fr-table-border-0" style="width: 100%;"><tbody><tr>
+<td style="width: 78.9809%;"><p style="margin-top:0pt;margin-bottom:15pt;font-family:Calibri;font-size:12.0pt;
+ color:#384C60;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(0, 0, 0); font-size: 26px;">Every day, the Christian Broadcasting Network provides a variety of on its various shows, including world news, Christian news, testimonials, ministry, lifestyle content, and more.</span></span></p></td>
+<td style="width: 20.8599%;">
+<div style="text-align: center;">
+<span style="font-size: 26px;"><em><span style="color: rgb(0, 0, 0);"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1625590301517-1625590301517.png" class="fr-fic fr-dib"></span></em></span><br>
+</div>
+<p style="text-align: center;"><br></p>
+<br>
+</td>
+</tr></tbody></table>
+<hr>
+<div class="hj-alert-block hj-info-block"><div class="alert-message">
+<h2 class="hj-alert-heading" data-toc="true" id="briefing-notes-1"><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Briefing Notes</span></h2>
+<div id="isPasted"><div id="isPasted"><div><div><div id="isPasted"><div id="isPasted"><div><div><div><div><div><div><div id="isPasted"><div><div><div><div><div><div><div id="isPasted"><div><div><div><div><div><div><div id="isPasted"><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div id="isPasted"><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div id="isPasted"><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(184, 49, 47);"><strong>Release Date: 9/5/23</strong></span></p>
+<div id="isPasted">
+<div id="isPasted"><p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Heads Up Announcement – Network Order Changes (All Agents)</strong> </span></p></div>
+<div><p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Great news! Our viewing audience is being expanded with the following network order changes. </span></p></div>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Tampa – St. Petersburg (Sarasota), FL: </strong></span></p>
+<ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">SSN TV (IND)</span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">1- 2 PM EST</span></li>
+</ul>
+</div>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>New York, NY: </strong></span></p>
+<ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">WWOR TV9</span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">10-11 AM EST (Beginning 10/2/23) </span></li>
+</ul>
+</div>
+<div>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Duluth, MN:</strong></span></p>
+<ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">OBJR TV6.3</span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Cancellation (Replaced by NBJR)</span></li>
+</ul>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Pittsburgh, PA:</strong></span></p>
+<ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">WPKD TV19 (New call letters, formerly WPCW)</span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">10 - 11 AM EST  </span></li>
+</ul>
+</div>
+<div><p lang="EN-US"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Postcards are being mailed to our contact list in each viewing area.</span><span data-ccp-props='{"201341983":0,"335551550":1,"335551620":1,"335559739":160,"335559740":259}' style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 14pt; line-height: 22.6625px; font-family: Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif;"> </span></p></div>
+</div>
+<div><p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">If a caller would like to leave a comment about this update, please process the calls as follows:  </span></p></div>
+<div><p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(44, 130, 201);">Category</span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">: Comment   </span></p></div>
+<div><p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(44, 130, 201);">Project</span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">: Viewer Comments  </span></p></div>
+<div><p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(44, 130, 201);">Agent Note</span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">: Select <strong>700 Club Broadcast Schedule Comments</strong> from the drop-down list and submit a referral.</span></p></div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div></div>
+<hr>
+<h2 data-toc="true" id="broadcast-affiliates-2" style='margin-top:15pt;margin-bottom:11pt;font-family:"Open Sans";
+ font-size:21.0pt;'><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);">Broadcast Affiliates</span></h2>
+<p style='margin-top: 15pt; margin-bottom: 11pt; font-family: "Open Sans"; font-size: 21pt; line-height: 1;'><span style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0);">Channel Stations, Antenna information, etc.</span></span></p>
+<div class="hj-alert-block hj-info-block"><div class="alert-message">
+<h3 class="hj-alert-heading" data-toc="true" id="agent-note-3"><span style="color: rgb(62, 114, 159); font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(218, 241, 248); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><strong>Agent Note</strong></span></h3>
+<p class="hj-alert-text"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;">While the newest CBN.com website is being improved to provide a search feature for where to watch by zip code, please use the Channel Stations accordion below to assist our callers. </span></p>
+<p class="hj-alert-text"><span style="font-size: 24px;"><span style="font-family: Arial,Helvetica,sans-serif;">If callers live outside the areas listed below, please verify/capture their complete contact information including their email address and send a referral. </span></span></p>
+<p class="hj-alert-text"><span style="font-size: 24px;"><span style="font-family: Arial,Helvetica,sans-serif;">In the referral, please include how they are currently watching The 700 Club (what cable/satellite channel or what local affiliate channel).</span></span></p>
+<p class="hj-alert-text"><span style="font-size: 24px;"><span style="font-family: Arial,Helvetica,sans-serif;">You may also say something like:</span></span></p>
+<p class="hj-alert-text"><span style="font-size: 24px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: rgb(0, 0, 0);">"Thank you for your interest and support. We are working very hard to bring the Christian Broadcasting Network to as many television markets as we can. In the meantime, you can still view our shows in a few ways:</span></strong></span></span></p>
+<ul>
+<li class="hj-alert-text"><span style="font-size: 24px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: rgb(0, 0, 0);">Online for free at</span> <a href="//cbn.com/700club" rel="noopener noreferrer" target="_blank">cbn.com/700club</a> </strong></span></span></li>
+<li class="hj-alert-text"><span style="font-size: 24px;"><span style="font-family: Arial,Helvetica,sans-serif;"><strong><span style="color: rgb(40, 50, 78);">On the CBN Family App (mobile/tablet)</span></strong></span></span></li>
+<li class="hj-alert-text"><span style="font-size: 24px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(40, 50, 78);"><strong>On the CBN News App (mobile/tablet)</strong></span></span></span></li>
+<li class="hj-alert-text"><span style="font-size: 24px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(40, 50, 78);"><strong>Live streaming platforms, such as Roku or Apple TV</strong></span></span></span></li>
+</ul>
+</div></div>
+<p><br></p>
+<div class="f-accordion-panel fr-inner">
+<p data-toc="true" id="channel-stations-4" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Channel Stations</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span></p>
+<div class="f-tab fr-inner ui-sortable">
+<h3 data-toc="true" id="stations-5"><span style="color: rgb(44, 130, 201); font-size: 24px; font-family: Arial, Helvetica, sans-serif;">Stations</span></h3>
+<table style="width: 100%;"><tbody>
+<tr>
+<td style="width: 33.3333%;"><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Station</span></strong></td>
+<td style="width: 33.3333%;"><strong style="box-sizing: border-box; font-weight: 700; color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Location</span></strong></td>
+<td style="width: 33.3333%;"><strong style="box-sizing: border-box; font-weight: 700; color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Subchannel</span></strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KSKJ-CD</span></td>
+<td style="width: 33.3333%;">
+<span id="isPasted" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Los Angeles, CA</span> </td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">45.3</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">WACX</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Orlando, FL</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">55.8</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">WDWW</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Atlanta, GA</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">28.1</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">WUPA </span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Atlanta, GA</span></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">SSN*</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Sarasota, FL (Tampa - St. Petersburg)</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">See note below table</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">WSDI</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Indianapolis, IN</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">30.4</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KAGW</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Wichita, KS</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">26.5</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">WBNA</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Louisville, KY</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">21.11</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">WUDL</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Detroit, MI</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">19.7</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">OBJR</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">Duluth, MN</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">6.3</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KBND</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Bend, OR</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">14.2</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KDOV</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Medford, OR</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">18.2</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KDSO</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Medford, OR</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">16.1</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">WPKD</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">Pittsburgh, PA</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">19</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">WCTZ</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Nashville, TN</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">35.6</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KYDF-LP</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Corpus Christi, TX</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">34.5</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KAXW-LD</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Waco, TX</span></td>
+<td style="width: 33.3333%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">35.5</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KTXH</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Houston, TX</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">20</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">WUTV</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Buffalo, NY</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">29</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">WWOR</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">New York, NY</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">9</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KJNP</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">North Pole/Fairbanks, AK</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">4</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">KCFT</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Anchorage, AK</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">19/35</span></td>
+</tr>
+</tbody></table>
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);" id="isPasted">*Note: SSN is a live stream out of Sarasota; it does not have a traditional broadcast number.</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">How to watch SSN on TV:</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">For Android devices:</span><ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">go to the Google Play Store</span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">search for VUit</span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">search for SSN</span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">download</span></li>
+</ul>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">For Google devices, smart TVs, Roku, Firestick, Google Chromecast, Apple TV:</span></p>
+<ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">download the VUit app from the app store</span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">search for SSN</span></li>
+</ul>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-tab fr-inner ui-sortable">
+<h3 data-toc="true" id="cable-satellite-info-6"><span style="color: rgb(44, 130, 201); font-size: 24px; font-family: Arial, Helvetica, sans-serif;">Cable &amp; Satellite Info</span></h3>
+<table style="width: 100%;"><tbody>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Cable</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Freeform</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">10am/11pm/3am ET</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Cable</span></td>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Trinity Broadcasting Network (TBN) Cable</span></td>
+<td style="width: 33.3333%;"><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">3pm ET</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Direct TV</span></td>
+<td style="width: 33.3333%;"><ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Freeform (Channel 311)</span></li>
+<li><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;">TBN (Channel 372)</span></span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">NRB (Channel 378)</span></li>
+</ul></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Dish Network</span></td>
+<td style="width: 33.3333%;"><ul>
+<li><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Freeform (Channel 180)</span></li>
+<li><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">TBN (Channel 260)</span> </span></li>
+</ul></td>
+<td style="width: 33.3333%;"><br></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Impact Network</span></td>
+<td style="width: 33.3333%;"><ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">DirectTV 380</span></li>
+<li><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;">Dish Network 268</span></span></li>
+<li><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;">ATT U-Verse 1574HD</span></span></li>
+<li><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;">Verizon 787HD</span></span></li>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">For Comcast, Spectrum Cable, Altice USA - Check your local listings. </span></li>
+</ul></td>
+<td style="width: 33.3333%;">
+<span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">5pm ET</span><br><br>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">NRB-TV</span></td>
+<td style="width: 33.3333%;"><ul><li><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Direct TV (Channel 378)</span></li></ul></td>
+<td style="width: 33.3333%;"><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">1pm/12am ET</span></td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<p data-toc="true" id="antenna-information-7" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Antenna Information</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span></p>
+<div class="hj-alert-block hj-info-block"><div class="alert-message">
+<h3 class="hj-alert-heading" data-toc="true" id="agent-note-8"><span style="color: rgb(62, 114, 159); font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(218, 241, 248); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><strong>Agent Note</strong></span></h3>
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">Sub channels are configured with a dot (e.g. 10.4, 10.8, etc.) and float between standard channels. Local channels like PBS and the CBN News Channel are meant to be free broadcast channels when you access them using a digital antenna.</span><p><span style="font-size: 24px;"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">A digital antenna is easy to install and typically takes less than five minutes. Antennas can be found at national retailers like Best Buy or Wal-Mart.</span></span></p>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(218, 241, 248); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">For those who aren't sure their antenna's are installed correctly, please offer to send one or more of the following:</span></p>
+<ul>
+<li><span style="font-size: 24px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(218, 241, 248); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">ENCV - CBN News Channel Training Video (Electronic Link)</span></span></span><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"> </span></span></li>
+<li style="color: rgb(0, 0, 0);"><span style="font-size: 24px;"><span style="font-family: Arial, Helvetica, sans-serif;">ENCB - CBN News Channel Instruction Fact Sheet (Download Link)</span></span></li>
+<li><span style="font-size: 24px;"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;">NCGB - CBN News Channel Instruction Booklet (Print)</span></span><span style="font-family: Arial,Helvetica,sans-serif;"><br></span></span></li>
+</ul>
+</div></div>
+<p><br></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<p><br></p>
+<h2 id="-4"><hr></h2>
+<h2 data-toc="true" id="shows-5" style='margin-top:15pt;margin-bottom:11pt;font-family:"Open Sans";
+ font-size:21.0pt;color:#384C60;'><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);">Shows</span></span></h2>
+<p style='margin-top: 15pt; margin-bottom: 11pt; font-family: "Open Sans"; font-size: 21pt; color: rgb(56, 76, 96); line-height: 1;'><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(0, 0, 0); font-size: 24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Descriptions and showtime information.</span></span></p>
+<div class="alert-message"><span style="font-family: Arial,Helvetica,sans-serif;"><br></span></div>
+<div class="f-accordion-panel fr-inner">
+<p data-toc="true" id="the-700-club-11" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">The 700 Club</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span></p>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;">
+<h1 data-toc="true" id="the-700-club-is-a-live-television-program-that-airs-each-weekday-featuring-pat-and-gordon-robertson-terry-meuwsen-wendy-griffith-and-more-it-has-the-variety-and-pacing-of-a-morning-show-with-live-guests-special-features-music-prayer-and-ministry-as-well-as-reporting-by-the-cbn-news-team-12" style="line-height: 1;">
+<em style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 17px; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="font-size: 22px; line-height: 1;">The 700 Club</span></em><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="line-height: 1;"> is a live television program that airs each weekday, featuring Pat and Gordon Robertson, Terry Meuwsen, Wendy Griffith, and more. It <span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">has the variety and pacing of a morning show with live guests, special features, music, prayer and ministry, as well as reporting by the </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">CBN News</span></span><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important; line-height: 1;"> team.</span></span>
+</h1>
+<p><br></p>
+<br>
+</td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1626356577655-1626356577655.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<p><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><strong>Show Times:</strong></span></span></p>
+<ul>
+<li><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Weekdays, live at 9am ET</span></span></li>
+<li>
+<span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Cable/Satelite</span></span><ul><li><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">10am, 1pm, 3pm, 5pm, 11pm, 12am, 3am ET</span></span></li></ul>
+</li>
+</ul>
+<br>
+</td>
+<td style="width: 50.0000%;">
+<ul><li><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="//cbn.com/700club" rel="noopener noreferrer" target="_blank">cbn.com/700club</a></span><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"> </span></span></li></ul>
+<br>
+</td>
+</tr>
+</tbody></table>
+<p><br></p>
+<span style="font-family: Arial,Helvetica,sans-serif;"><i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i></span>
+</div>
+<div class="f-accordion-panel fr-inner" style="position: relative; left: 0px; top: 0px;">
+<h2 data-toc="true" id="700-club-interactive-13" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">700 Club Interactive</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;">
+<em style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 17px; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="font-size: 22px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Freeform</span> </span></em><span style="font-size: 22px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;"><em>700 Club Interactive</em> (hosted by Gordon Robertson, Terry Meeuwsen, Ashley Key, Efrem Graham, and more), provides a daily dose of inspiration, encouragement, and entertainment.</span>
+</td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1626356684308-1626356684308.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<p><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><strong>Show Times:</strong></span></span></p>
+<ul><li><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Weekdays, at 10 am ET on Freeform</span></span></li></ul>
+<br>
+</td>
+<td style="width: 50.0000%;">
+<p><br></p>
+<ul><li>
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Watch past episodes at </span></span><a href="https://www1.cbn.com/tv/700club-interactive" id="" rel="noopener noreferrer" target="_blank" title=""><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">cbn.com/700club-interactive</span></span></a>
+</li></ul>
+<br>
+</td>
+</tr>
+</tbody></table>
+<span style="font-family: Arial,Helvetica,sans-serif;"><i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i></span>
+</div>
+<div class="f-accordion-panel fr-inner" style="position: relative; left: 0px; top: 0px;">
+<h2 data-toc="true" id="700-club-canada-14" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">700 Club Canada</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="font-size: 22px; color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Hosted by Lorie Hartshorn and Bill Markham, The 700 Club Canada is a dynamic 30-minute daily program that airs coast-to-coast in Canada. It is a mix of powerful stories along with devotional segments and interviews.</span></span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1626358918718-1626358918718.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<p><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><strong>Show Times:</strong></span></span></p>
+<ul><li>
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Weekdays on:</span></span><ul>
+<li><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Vision TV Nationwide at 10:30am ET</span></span></li>
+<li><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Joy TV Nationwide at 1pm &amp; 9pm PT</span></span></li>
+<li><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Faith TV Nationwide at 9am &amp; 9pm CT</span></span></li>
+<li><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Miracle Channel at 9:30am MT</span></span></li>
+</ul>
+</li></ul>
+<br>
+</td>
+<td style="width: 50.0000%;">
+<ul><li>
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Watch past episodes on the </span></span><a href="https://www.youtube.com/channel/UCcCfkH6ZDHocdbDs-I7GndQ/videos" id="" rel="noopener noreferrer" target="_blank" title=""><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">700 Club Canada YouTube Channel</span></span></a>
+</li></ul>
+<br>
+</td>
+</tr>
+</tbody></table>
+<span style="font-family: Arial,Helvetica,sans-serif;"><i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i></span>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="club-700-hoy-15" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Club 700 Hoy</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 59.9017%;"><span style="font-size: 22px;orphans: 2; text-align: start; text-indent: 0px; widows: 2; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">TBD - Hosted by siblings Roberto and Jessica, this 1-hour show will reach a Spanish-speaking audience in America.</span></td>
+<td style="width: 40.0983%;">
+<br><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1626360915545-1626360915545.png" class="fr-fic fr-dib">
+</td>
+</tr>
+<tr>
+<td style="width: 59.9017%;">
+<p><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><strong>Show Times - National Networks:</strong></span></span></p>
+<ul>
+<li><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">11:00 AM EST - Enlace </span></span></li>
+<li><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">12:30 PM EST - Daystar</span></span></li>
+</ul>
+<br>
+</td>
+<td style="width: 40.0983%;"><br></td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel" data-controller="accordion">
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: rgb(44, 130, 201);">Miracle Living Today</span></p>
+<p><br></p>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;">
+<span data-contrast="auto" id="isPasted" lang="EN-US" style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 22px; line-height: 22.4875px; font-family: Arial, Helvetica, sans-serif; font-variant-ligatures: none !important;"><span style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;">This 30 minute show will feature stories of </span></span><span data-contrast="auto" lang="EN-US" style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 22px; line-height: 22.4875px; font-family: Arial, Helvetica, sans-serif; font-variant-ligatures: none !important;"><span style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;">God’s divine intervention in impossible situations. </span></span>
+</td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1664381219712-PLASMA-Miracles%20Living%20Today.png" style="width: truepx;" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><br></td>
+<td style="width: 50.0000%;">
+<ul>
+<li id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Watch past episodes on:  <a href="https://www1.cbn.com/cbnnews/all-shows" rel="noopener noreferrer" target="_blank" title="">cbnnewschannel.com</a>
+</li>
+<li id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);"><a href="https://secure.cbn.com/partners/video/" rel="noopener noreferrer" target="_blank" title="">cbnfamily.com</a></li>
+</ul>
+<br>
+</td>
+</tr>
+</tbody></table>
+<p><br></p>
+<table style="width: 100%;"><tbody>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Market</span></strong></span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Station</strong></span></td>
+<td style="width: 20.0000%;"><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Network</span></strong></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Day</span></strong></span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Time (EST)</span></strong></span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">El Paso, TX</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">KSCE TV38</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">IND</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Thursday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">9:00 PM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">National</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">NRB</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">NRB</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Saturday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">10:30 PM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Lima, OH</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">WTLW TV44</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">IND</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Monday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">12:30 PM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">National</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">CBN News Channel</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">CBN</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Saturday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">9:00 AM, 11:00 PM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">National</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">CBN News Channel</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">CBN</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Sunday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">9:00 AM, 11:00 PM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">National</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Daystar</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Daystar</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Saturday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">3:30 PM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Orlando, FL</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">WTGL TV45</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">IND</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Saturday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">11:00 AM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Orlando, FL</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">WTGL TV45</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">IND</span></td>
+<td style="width: 20.0000%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Monday</span> </td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> 10:00 PM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">National</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Freeform</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Freeform</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Friday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">10:00 AM</span></td>
+</tr>
+<tr>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Orlando, FL</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">WACX TV55</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">IND</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Friday</span></td>
+<td style="width: 20.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">2:00 PM</span></td>
+</tr>
+</tbody></table>
+<p><br></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i><a class="delete-accordion fa-trash-alt" contenteditable="false" data-action="accordion#delete" href="#">Delete</a>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="tpi-16" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">TPi</span></strong></span><span style="color: rgb(44, 130, 201);"><strong><span style="font-family: Arial,Helvetica,sans-serif;"> </span></strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="font-size: 22px; color: rgb(0, 0, 0);"><span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(254, 254, 254); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">A dynamic and lively 30-minute TV magazine program, </span><span style="font-family: Arial, Helvetica, sans-serif;"><strong style="box-sizing: inherit; font-weight: bold; line-height: inherit; color: rgb(51, 51, 51); font-family: proxima-nova, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(254, 254, 254); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">TPi </strong>(Turning Point International)<span style="color: rgb(51, 51, 51); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(254, 254, 254); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"> is broadcast weekly to Africa, Europe and the Caribbean. Inspiring and informative, this family program, which is anchored by a Nigeria born Muyiwa Olarewaju, focuses on critical global social issues and powerful testimonies, also offering uplifting music from indigenous and international artists.</span> </span></span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1626361900017-1626361900017.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<p><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><strong>Show Times:</strong></span></span></p>
+<ul><li><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Weekly,TBD</span></span></li></ul>
+<br>
+</td>
+<td style="width: 50.0000%;">
+<ul><li>
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Watch past episodes at </span></span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="//cbn.com/cbnnews/tpi" rel="noopener noreferrer" target="_blank">cbn.com/cbnnews/tpi</a></span></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><span style="font-family: ProximaNovaReg, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"> </span></span>
+</li></ul>
+<br>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="on-the-homefront-17" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">On the Homefront</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Human interest and stories of faith about the men and women who serve in the US military.</span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627906948381-1627906948381.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<p><br></p>
+<br>
+</td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="https://www1.cbn.com/tv/On-the-Homefront" rel="noopener noreferrer" target="_blank">cbn.com/on-the-homefront</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<p><br></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="healthy-living-18" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Healthy Living</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Hosted by Lorie Johnson, Healthy Living provides the latest medical information to help you and your family look and feel your very best.</span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627907159346-1627907159346.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<p><br></p>
+<br>
+</td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="//cbn.com/cbnnews/healthy-living" rel="noopener noreferrer" target="_blank">cbn.com/cbnnews/healthy-living</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="studio-5studio-5-uncut-19" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Studio 5/Studio 5 Uncut</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Hosted by Efrem Graham, Studio 5 features exclusive interviews with some of the biggest names in uplifting entertainment.</span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627907228289-1627907228289.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><br></td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="//cbn.com/cbnnews/studio-5" rel="noopener noreferrer" target="_blank">cbn.com/cbnnews/studio-5</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="faithwire-faith-vs-culture-20" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Faithwire - Faith vs. Culture</span></strong></span></h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="color: rgb(33, 33, 33); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Faithwire Managing Editor Dan Andros and Author Dale Partridge address trending topics in the culture from a faith perspective.</span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627907488198-1627907488198.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><br></td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="//cbn.com/tv/faithwire-faith-vs-culture" rel="noopener noreferrer" target="_blank">cbn.com/tv/faithwire-faith-vs-culture</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="prayer-link-21" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Prayer Link</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Hosts Charlene Aaron and Wendy Griffith combine current events with the power of prayer.</span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627907849442-1627907849442.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><br></td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="https://www1.cbn.com/tv/prayer-link" rel="noopener noreferrer" target="_blank">cbn.com/tv/prayer-link</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="global-lane-22" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Global Lane</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">International news and analysis program hosted by award-winning journalist Gary Lane.</span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627907914233-1627907914233.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><br></td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="//cbn.com/cbnnews/global-lane" rel="noopener noreferrer" target="_blank">cbn.com/cbnnews/global-lane</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="newswatch-23" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Newswatch</span></strong></span><span style="color: rgb(44, 130, 201);"><strong><span style="font-family: Arial,Helvetica,sans-serif;"> </span></strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="color: rgb(24, 24, 24); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">CBN News’ daily newscast of record bringing you up-to-date news of the day from our team of reporters, experts and analysts.</span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627908030750-1627908030750.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><br></td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="https://www1.cbn.com/tv/newswatch" rel="noopener noreferrer" target="_blank">cbn.com/tv/newswatch</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="jerusalem-dateline-24" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Jerusalem Dateline</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 22px; font-family: Arial, sans-serif; color: rgb(24, 24, 24);">Jerusalem Bureau Chief Chris Mitchell reports from the Holy Land and Middle East – with insight you’ll only get from CBN News. </span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627908137687-1627908137687.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><br></td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="//cbn.com/cbnnews/jerusalem-dateline/watch" rel="noopener noreferrer" target="_blank">cbn.com/cbnnews/jerusalem-dateline/watch</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="christian-world-news-25" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Christian World News</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<table class="fr-table-border-0" style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;"><span style="color: rgb(24, 24, 24); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgba(255, 255, 255, 0.9); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Christian World News is a half-hour weekly news program devoted to the work of the Holy Spirit around the globe. Produced by CBN News, this award-winning newscast airs at various times in the United States and around the world.</span></td>
+<td style="width: 50.0000%;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1627908303939-1627908303939.png" class="fr-fic fr-dib"></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><br></td>
+<td style="width: 50.0000%;">
+<span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Watch past episodes at </span><span style="color: rgb(44, 130, 201); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a href="//cbn.com/tv/cwn" rel="noopener noreferrer" target="_blank">cbn.com/tv/cwn</a></span><span style="color: rgb(0, 0, 0); font-family: ProximaNovaReg, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+</tr>
+</tbody></table>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<hr>
+<h2 data-toc="true" id="faqs-6" style='margin-top:15pt;margin-bottom:11pt;font-family:"Open Sans";
+ font-size:21.0pt;color:#384C60;'><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);">FAQs</span></span></h2>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="how-can-i-find-out-what-is-playing-this-month-27" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">How Can I Find Out What Is Playing This Month?</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<p><span style="color: black; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif; background: white;">Please visit the Show page to find out more about our various news programs: </span><span style="color: rgb(44, 130, 201); font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif; background: white;"><a href="//cbn.com/cbnnews/all-shows" rel="noopener noreferrer" target="_blank">cbn.com/cbnnews/all-shows</a></span><span style="color: black; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif; background: white;"> </span><span style="font-size: 22px;"><span style="color: black; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif; background: white;"><br><br>You can also sign up for our alerts so you may receive updates: </span><span style="color: rgb(44, 130, 201); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif; background: white;"><a href="//cbn.com/cbnnews/email-forms" rel="noopener noreferrer" target="_blank">cbn.com/cbnnews/email-forms</a></span><span style="color: black; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif; background: white;"> </span></span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="im-not-seeing-channel-listings-what-do-i-do-28" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">I'm Not Seeing Channel Listings. What Do I Do?</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<p><span style="color: black; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif; background: white;">We can’t always control the channel listings but will do our best to work with the cable providers. In the meantime, check out our </span><span style="color: black; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif;"><span style="background: white;">current listings for CBN: </span></span><span style="color: rgb(44, 130, 201); font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif;"><span style="background: white;"><a data-fr-linked="true" href="https://www1.cbn.com/cbnnews/newschannel/schedule" rel="noopener noreferrer" target="_blank">cbn.com/newschannel/schedule</a></span></span><span style="color: black; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: Arial, sans-serif;"><span style="background: white;"> </span></span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="can-i-watch-cbn-with-closed-captioning-29" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Can I Watch CBN With Closed Captioning?</span></strong></span></h2>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Every CBN channel provides closed captioning, and we are constantly ensuring that we are in compliance with FCC regulations.</span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="what-do-i-do-if-my-picture-is-pixelating-or-skipping-30" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">What Do I Do If My Picture Is Pixelating Or Skipping?</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<ul>
+<li><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">First, try moving around the antenna, if you have one. This will often improve the picture. </span></li>
+<li><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;">Second, try restarting it (unplug it from the wall and plug it back in).</span></span></li>
+<li><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;">Third, rescan your channel.</span></span></li>
+</ul>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Agent Note: You may offer to send ENCV.</span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="can-i-suggest-programming-31" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Can I Suggest Programming?</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Yes, we value your feedback. If there is a topic you would like to see shown on the CBN News Channel, we'll happily pass your suggestion on to our programming team as viewer input.</span></p>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Agent Note: Submit a Feedback Referral.</span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="do-i-have-to-pay-for-programming-32" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Do I Have to Pay for Programming?</span></strong></span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><strong> </strong></span>
+</h2>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">No. Programming received through a digital antenna is free, as well as watching online for free at </span><span style="color: rgb(44, 130, 201); font-family: Arial; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><a class="currently-active" href="//cbn.com/700club" rel="noopener noreferrer" target="_blank">cbn.com/700club</a></span><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"> </span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="when-do-i-need-to-run-a-channel-scan-33" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">When Do I Need to Run a Channel Scan?</span></strong></span></h2>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Run a channel scan after setting up the antenna. If you already have an over-the-air antenna and have not recently run a scan, you may need to rescan your channels as CBN Channel local stations may have been recently added to your area.</span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<h2 data-toc="true" id="where-should-i-place-my-antenna-34" style='box-sizing: border-box; text-transform: none; font-weight: 600; font-size: 28px; font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; line-height: 1.3; color: rgb(56, 76, 96); margin-top: 20px; margin-bottom: 15px; letter-spacing: 0.4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: left; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style="box-sizing: border-box; font-size: 28px;"><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Where Should I Place My Antenna?</span></strong></span></h2>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: -24px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">To minimize interference and improve your signal reception, position the antenna near a window.</span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<hr>
+<p><br></p>
+  </div>
+</article>
+
+
+</body>
+</html>

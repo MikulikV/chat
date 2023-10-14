@@ -2,13 +2,12 @@ from flask import json
 import openai
 import requests
 import sseclient
-import os
-from dotenv import load_dotenv
-from config import MODEL, TEMPERATURE, MAX_RESPONSE_TOKENS
+import sys
+sys.path.append("backend/")
+from config import OPENAI_API_KEY, MODEL, TEMPERATURE, MAX_RESPONSE_TOKENS
 from cbn_openai.tools import functions, get_current_weather, get_actual_information
 
-load_dotenv()
-openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_key = OPENAI_API_KEY
 available_functions = {
     "get_current_weather": get_current_weather,
     "get_actual_information": get_actual_information,

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="pdfcrowd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+
+  <style type="text/css">
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}:root{--type-base: 1em;--type-xxxx-small: 30%;--type-xxx-small: 55%;--type-xx-small: 65%;--type-x-small: 75%;--type-small: 85%;--type-medium: 100%;--type-large: 120%;--type-x-large: 160%;--type-xx-large: 200%;--type-xxx-large: 300%;--type-xxxx-large: 400%;--color-text: #000}@media print{.question{page-break-after:always}}html{font-size:16px}body{margin:0;padding:0;font-family:'IBM Plex Sans', 'Helvetica', 'Arial', sans-serif;font-size:var(--type-base);color:var(--color-text);overflow-x:hidden}h1,h2,h3,h4{font-weight:normal;margin:20px 0 15px}h1{font-size:36px}h2{font-size:28px}h3{font-size:24px}h4{font-size:21px}p{font-size:16px;font-weight:normal;margin:0 0 20px 0;line-height:1.5}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;color:#333333;background-color:#f5f5f5;border:1px solid #cccccc;border-radius:4px}.hj-table-of-contents{margin-bottom:20px}.hj-table-of-contents i,.hj-table-of-contents .update-toc{display:none}.hj-table-of-contents h3{margin:30px 0 20px 0 !important}.hj-table-of-contents strong{font-size:16px}.hj-table-of-contents a{display:block;font-size:16px}.hj-alert-block{border-left:5px solid black;position:relative;padding:10px 20px;border-radius:0 2px 2px 0;-webkit-column-break-inside:avoid;-moz-column-break-inside:avoid;break-inside:avoid}.hj-alert-block p.hj-alert-text{margin:10px 0}.hj-alert-block h3.hj-alert-heading{margin:0 0 10px 0}.hj-alert-block div{margin:0}.hj-alert-block.hj-info-block{border-color:#2196f3;background:#daf1f8;color:#3e729f}.hj-alert-block.hj-info-block p.hj-alert-text,.hj-alert-block.hj-info-block h3.hj-alert-heading{color:#3e729f}.hj-alert-block.hj-warning-block{border-color:#ff9800;background:#f8d9ac;color:#8a6d3c}.hj-alert-block.hj-warning-block p.hj-alert-text,.hj-alert-block.hj-warning-block h3.hj-alert-heading{color:#8a6d3c}.hj-alert-block.hj-success-block{border-color:#4caf50;background:#c7e6c7;color:#4a7d61}.hj-alert-block.hj-success-block p.hj-alert-text,.hj-alert-block.hj-success-block h3.hj-alert-heading{color:#4a7d61}.hj-alert-block.hj-error-block{border-color:#f44336;background:#f4cecd;color:#a4474f}.hj-alert-block.hj-error-block p.hj-alert-text,.hj-alert-block.hj-error-block h3.hj-alert-heading{color:#a4474f}b,strong{font-weight:700}img{max-width:100%;display:block;float:none;vertical-align:top;margin:5px auto}a{color:#0560FC}a:hover,a:focus,a:active{color:#1e70fc}ul,ol{margin:0 0 10px 0;padding:0;line-height:1.5}ol ul,ul ul{margin-top:0}ol li,ul li{margin-left:1.5em;padding-left:0}i,cite,em,var,address,dfn{font-style:italic}hr{margin:20px 0;border:0;border-top:1px solid #eeeeee}code{position:relative;padding:0.25rem 0.5rem;border-radius:0.2rem;font-size:var(--type-x-small);font-family:SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace}.breadcrumb{display:none}table{width:100%;max-width:100%;border:none;border-collapse:collapse;empty-cells:show;margin-bottom:20px;background-color:transparent;border-spacing:0}table tr{line-height:200%}table th{background-color:#eeeeee;text-align:left}table th,table td{border:1px solid #dddddd;padding:5px 10px;word-break:break-word}.article-item .follow-article-form,.article-item .was-this-helpful,.article-item .fr-video{display:none}.article-item .question-author{display:-webkit-box;display:-ms-flexbox;display:flex}#glossary-article .glossary-locked-article{display:none}#glossary-article .glossary-article-header input,#glossary-article .glossary-article-header p,#glossary-article .glossary-article-header div{display:none}#glossary-article .glossary-terms h4{margin:0 0 10px}.hidden{display:none !important}article.question{width:100%;margin:0 auto}article.question header{margin-bottom:30px}article.question .info{border-bottom:1px solid #E2E5E9;padding:10px 0;width:100%}article.question .info .breadcrumbs{margin:0;padding:0}article.question .info .breadcrumbs li{display:inline;list-style-type:none;margin:0;font-size:var(--type-small);color:#97A5BA}article.question .info .breadcrumbs li::after{content:'/';display:inline-block;margin:0 8px}article.question .info .breadcrumbs li.article-name::after{content:none}article.question .info p{font-size:var(--type-small);color:#97A5BA;margin:0}article.question .info p span{text-decoration:underline}article.question .article-info .article-category{font-size:var(--type-medium)}article.question .article-info .article-name{margin:0.3em 0}article.question .article-info .article-subtitle{margin:0;font-size:var(--type-large)}article.question .author-info p{margin:0;color:#97A5BA}header.category-pdf{margin-bottom:100px !important}header.category-pdf .category-info{padding:10px 0;width:100%}header.category-pdf .category-info p{margin:0;font-size:var(--type-small)}header.category-pdf .category-info p span.category{text-decoration:underline}header.category-pdf .toc h4{font-size:var(--type-xxx-small);font-weight:normal;color:#97A5BA;text-transform:uppercase;letter-spacing:2px}header.category-pdf .toc .table-of-contents h2,header.category-pdf .toc .table-of-contents h3{margin:0}header.category-pdf .toc .table-of-contents header{margin:0 0 10px 0}header.category-pdf .toc .table-of-contents .subcategorie{list-style-type:none;margin-top:10px}header.category-pdf .toc ol{margin:0 0 0 10px;padding:0}header.category-pdf .toc ol li span{font-size:var(--type-small)}.hj-custom{position:static !important;width:100%;max-width:100% !important;-webkit-box-shadow:none !important;box-shadow:none !important;border:none !important;padding:0 !important;margin:0 0 20px;font-size:16px !important}.hj-custom div{padding:0 !important}.fa-trash-alt{display:none}
+
+  </style>
+</head>
+<body>
+  <article class="question">
+  <header>
+      <meta name="id" content="856851">
+      <meta name="category_id" content="116257">
+      <meta name="accessibility" content="0">
+      <meta name="codename" content="salvation">
+      <meta name="name" content="Salvation">
+      <meta name="description" content="Salvation">
+      <meta name="published" content="true">
+
+    <div class="article-info">
+      <h1 class="article-name">Salvation</h1>
+      <p class="article-subtitle">Salvation</p>
+    </div>
+
+      <div class="author-info">
+          <p>Written by Jessica Mowry | Last published at: August 04, 2022</p>
+      </div>
+    <hr>
+  </header>
+
+  <div id="hj-article-body" class="body fr-view">
+      <h2 id="description-0" data-toc="true">
+<span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Description</span><span style="color:#384C60;"><span> </span></span>
+</h2>
+<p> </p>
+<figure class="table" style="width:100%;"><table>
+<colgroup>
+<col style="width:50%;">
+<col style="width:50%;">
+</colgroup>
+<tbody><tr>
+<td style="width:54.3269%;">
+<p><span style="color:rgb(0,0,0);font-size:20px;"><span>The Salvation prayer topic provides Scripture references for prayer requests regarding personal salvation, the salvation of a loved one, confession and repentance, water baptism, and baptism of the spirit.</span></span></p>
+<p><br> </p>
+</td>
+<td style="width:45.6731%;"><img class="image_resized" style="width:364px;" src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1643916286403-1643916286403.png"></td>
+</tr></tbody>
+</table></figure><hr>
+<h2 id="scripture-references-ministry-support-1" data-toc="true"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Scripture References &amp; Ministry Support</span></h2>
+<h2 id="the-prayer-of-salvationrededication-2" data-toc="true">
+<span style="color:rgb(44,130,201);">The Prayer of Salvation/Rededication</span> </h2>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;"><i>(Have caller repeat after you)</i></span></p>
+<ul><li>"Lord Jesus… I ask you to come into my life… I want to turn… from living my life… under my own control… Come now… and live your life in me… Cleanse me from my sins… I receive you as my Lord… and my Savior… I will live for you… and serve you… all the days of my life… In Jesus' name... Amen."</li></ul>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Post Salvation Prayer:</span></p>
+<ul><li>"Heavenly Father, my heart rejoices for (caller name), who has just become your child. Pour your richest blessing into (caller name)'s life. Help (him/her) to grow in this new relationship with you as (he/she) prays and studies your Word. Fill (caller name) with the power and the presence of your Holy Spirit. In Jesus' name... Amen."</li></ul>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Why Salvation?</span></h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">The following information can be used to share why salvation is needed.</span></p>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">All are Separated from God</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"Everyone who tries to live life his own way is separated from God."</span></p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span></p>
+<ul>
+<li>For all have sinned; all fall short of God's glorious standard. (Romans 3:23) </li>
+<li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">All of us have strayed away like sheep. We have left God's paths to follow our own. Yet the LORD laid on him the guilt and sins of us all."  (Isaiah 53:6)</span></li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">The Penalty for Separation</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"We will be held accountable for the choices we make.  If we choose to ignore God, we'll face eternal separation from Him."</span></p>
+<p><span style="background-color:rgb(255,255,255);color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;"> </span></p>
+<ul>
+<li>For the wages of sin is death, but the free gift of God is eternal life through Christ Jesus our Lord. (Romans 6:23) </li>
+<li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">And just as it is destined that each person dies only once and after that comes judgment. (Hebrews 9:27a)</span></li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Good Works are not Enough</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"Nothing we do, no matter how good it may be, can make us good enough to have a relationship with God without Jesus Christ."</span></p>
+<p><span style="background-color:rgb(255,255,255);color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;"> </span></p>
+<ul>
+<li>He saved us, not because of the good things we did, but because of his mercy. He washed away our sins and gave us a new life through the Holy Spirit. (Titus 3:5) </li>
+<li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">God saved you by his special favor when you believed.  And you can't take credit for this; it is a gift from God. Salvation is not a reward for the good things we have done, so none of us can boast about it. (Ephesians 2:8-9)</span></li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Jesus Paid the Penalty</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"God sent Jesus to be the bridge back to right-standing with God.  Christ's death on the cross paid the penalty we faced for going our own way."</span></p>
+<p><span style="background-color:rgb(255,255,255);color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References: </span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;"> </span></p>
+<ul>
+<li>But God showed his great love for us by sending Christ to die for us while we were still sinners. (Romans 5:8) </li>
+<li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Christ also suffered when he died for our sins once for all time. He never sinned, but he died for sinners that he might bring us safely home to God. He suffered physical death, but he was raised to life in the Spirit. (1 Peter 3:18)</span></li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Must Receive Christ</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"You must receive God's gift by inviting Jesus into your life as your Lord and Savior."</span></p>
+<p><span style="background-color:rgb(255,255,255);color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:  </span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;"> </span></p>
+<ul>
+<li>But to all who believed him and accepted him, he gave the right to become children of God. (John 1:12) </li>
+<li>Look!  Here I stand at the door and knock. If you hear me calling and open the door, I will come in, and we will share a meal as friends. (Revelation 3:20) </li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Assurance of Salvation</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"Once you have done that, you can have absolute assurance that you have eternal life."</span></p>
+<p><span style="background-color:rgb(255,255,255);color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:   </span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;"> </span></p>
+<ul>
+<li>I write this to you who believe in the Son of God, so that you may know you have eternal life. (1 John 5:13) </li>
+<li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">I assure you, those who listen to my message and believe in God who sent me have eternal life. They will never be condemned for their sins, but they have already passed from death into life.  (John 5:24)</span></li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<p> </p>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Encouragement </span></h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">The following information can be used to offer encouragement to the new or recommitted believer. </span></p>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">God Strengthens &amp; Guides</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"God promises to strengthen and guide you now that you are His child."</span> </p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span></p>
+<ul>
+<li>"Don't be afraid, for I am with you. Do not be dismayed, for I am your God. I will strengthen you. I will help you. I will uphold you with my victorious right hand. <span style="background-color:rgb(255,255,255);">(Isaiah 41:10)</span> </li>
+<li>"Trust in the LORD with all your heart; do not depend on your own understanding. Seek his will in all you do, and he will direct your paths. (Proverbs 3:5-6)</li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Sin Forgiven</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"In God's eye you are now a new creation. All your sins have been forgiven and you have eternal life."</span></p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span></p>
+<ul>
+<li>"Therefore, if anyone is in Christ, he is a new creation; old things have passed away; behold, all things have become new." (2 Corinthians 5:17)</li>
+<li>"I assure you, those who listen to my message and believe in God who sent me have eternal life. They will never be condemned for their sins, but they have already passed from death into life." (John 5:24)</li>
+<li>"But if we confess our sins to him, he is faithful and just to forgive us and to cleanse us from everything wrong." (1 John 1:9)</li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Heir of God's Kingdom</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"You are now an heir in God's Kingdom.  He will watch over you and provide for you."</span></p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span></p>
+<ul>
+<li>Now you are no longer a slave but God's own child. And since you are his child, everything he has belongs to you. (Galatians 4:7)</li>
+<li>And this same God who takes care of me will supply all your needs from his glorious riches, which have been given to us in Christ Jesus. (Philippians 4:19)</li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">God Answers Prayer</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"Now that you are His child, God welcomes your prayers.  He promises to listen and respond when you call on Him."</span></p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span></p>
+<ul>
+<li>Morning, noon, and night I plead aloud in my distress, and the LORD hears my voice. (Psalm 55:17) </li>
+<li>I will answer them before they even call to me. While they are still talking to me about their needs, I will go ahead and answer their prayers! (Isaiah 65:24) </li>
+<li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">You haven't done this before. Ask, using my name, and you will receive, and you will have abundant joy. (John 16:24)</span></li>
+</ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<p> </p>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Next Steps</span></h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;"><strong>ASK</strong></span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">:  "Are you attending a Bible-believing church?"</span></p>
+<p><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;"><strong>(If YES)</strong></span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">  "I'd like to encourage you to tell your pastor about your decision to accept Jesus as your Savior."</span></p>
+<p><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;"><strong>(If NO)</strong></span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">   "We're going to send you some information that will help you in choosing a church."</span></p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"I'd like to encourage you to:</span></p>
+<ul>
+<li>Begin to grow in your relationship to Jesus by reading the Bible daily. Get a modern translation that is easy to understand. Ask God to open your eyes and teach you through His Word. </li>
+<li>Spend time in prayer daily. Talk to Him as you would a friend. </li>
+<li>
+<span style="font-family:Arial, Helvetica, sans-serif;">Get involved in Sunday School or a Bible study."</span><strong> </strong>
+</li>
+</ul>
+<p style="margin-left:0px;"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Additional Literature Resources:</span></p>
+<ul>
+<li>
+<a target="_blank" rel="noopener noreferrer" href="https://cbn.helpjuice.com/146856-product/a-new-day?from_search=93685966"><span style="color:rgb(44,130,201);">A New Day Pre-Pack</span></a> - MK01</li>
+<li>
+<a target="_blank" rel="noopener noreferrer" href="https://cbn.helpjuice.com/146856-product/a-new-day?from_search=93685966"><span style="color:rgb(44,130,201);">A New Day Booklet</span></a> - MK02</li>
+<li>Gordon Teaching on Salvation (Email Only) - ED08</li>
+</ul>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<p> </p>
+<h2 id="the-prayer-of-the-baptism-of-the-holy-spirit-3" data-toc="true"><span style="color:rgb(44,130,201);">The Prayer of the Baptism of the Holy Spirit </span></h2>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;"><i>(Have caller repeat after you)</i></span> </p>
+<ul><li>"Lord Jesus… I ask you now… to pour out your Holy Spirit on me… Fill me to overflowing… with Your Spirit… I surrender everything within me… to your control… and receive your gifts by faith… I receive from you a prayer language… so that I can praise you… in a new way… Thank you for giving me this gift… Help me to release myself… so that you might flow through me… In Jesus' name... Amen."</li></ul>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Why Baptism of the Holy Spirit?</span></h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">The following information can be used to share the baptism of the holy spirit. </span></p>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Power to Witness</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"The outpouring of the Holy Spirit will enable you to be a more effective witness for Jesus.  The Holy Spirit empowers us to speak out with boldness about our relationship to Jesus."</span></p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span></p>
+<ul><li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">But when the Holy Spirit has come upon you, you will receive power and will tell people about me everywhere - in Jerusalem, throughout Judea, in Samaria, and to the ends of the earth. (Acts 1:8)</span></li></ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Special Gift</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"The outpouring of the Holy Spirit is a special gift from God through which He fills your inner being with His presence. It is available to every born-again believer."</span></p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span></p>
+<ul><li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Peter replied, "Each of you must turn from your sins and turn to God, and be baptized in the name of Jesus Christ for the forgiveness of your sins. Then you will receive the gift of the Holy Spirit. This promise is to you and to your children, and even to the Gentiles - all who have been called by the Lord our God." (Acts 2:38-39.)</span></li></ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Received by Faith</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"Just as you received salvation by faith, you also receive outpouring of the Holy Spirit the very moment you ask in faith."</span></p>
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References:</span></p>
+<ul><li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">If you sinful people know how to give good gifts to your children, how much more will your heavenly Father give the Holy Spirit to those who ask Him. (Luke 11:13)</span></li></ul>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Prayer Language and Other Gifts</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body">
+<p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">"When you receive the outpouring of the Holy Spirit, God wants to give you a special language with which you can praise and worship Him unhindered by our understanding.  Sometimes the Holy Spirit will manifest Himself in other ways, such as prophecy, overflowing joy and other gifts which clearly reveal the presence and reality of Jesus Christ."</span></p>
+<p><span style="background-color:rgb(255,255,255);color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Scripture References: </span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;"> </span></p>
+<ul>
+<li>For if I pray in tongues, my spirit is praying, but I don't understand what I am saying. Well then, what shall I do? I will do both. I will pray in the spirit, and I will pray in words I understand. I will sing in the spirit, and I will sing in words I understand. (1 Corinthians 14:14-15) </li>
+<li><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">And the Holy Spirit helps us in our distress. For we don't even know what we should pray for, nor how we should pray. But the Holy Spirit prays for us with groanings that cannot be expressed in words. (Romans 8:26)</span></li>
+</ul>
+<p><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Agent Note</span><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">: PSR Note: If Prayer Language is not evident...remind the caller that they have received the Baptism of the Holy Spirit by faith. If there is no immediate manifestation of tongues, that does not mean they have not been filled with the Holy Spirit.</span></p>
+</div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<p> </p>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Next Steps</span></h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<p style="margin-left:0px;"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;">Additional Literature Resources:</span></p>
+<ul>
+<li>Manifestation of the Spirit Resource Sheet - TTH2/ER68</li>
+<li>Holy Spirit Baptism (Email Only) - ED07</li>
+</ul>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<p> </p>
+<h2 id="other-prayer-topics-related-to-salvation-4" data-toc="true"><span style="color:rgb(44,130,201);font-family:Arial, Helvetica, sans-serif;">Other Prayer Topics Related to Salvation</span></h2>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title">The Prayer of Salvation General Scriptures </h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Acts 4:12</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">There is salvation in no one else! There is no other name in all of heaven for people to call on to save them.</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">John 14:6</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Jesus answered, "I am the Way, the Truth, and the Life. No one comes to the Father except through Me."</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title">Salvation for Others</h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Acts 16:31</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">They replied, "Believe on the Lord Jesus and you will be saved, along with your entire household."</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Isaiah 49:25</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">"I will fight those who fight you, and I will save your children."</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title">Water Baptism</h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">John 3:5</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Jesus replied, "What I am telling you so earnestly is this; Unless one is born of the water and the Spirit, he cannot enter he Kingdom of God."</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Matthew 3:11</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">"I baptize you with water for repentance, but He who is coming after me is mightier than I, whose sandals I am not worthy to carry. He will baptize you with the Holy Spirit and fire."</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title">Spiritual Baptism</h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">2 Corinthians 4:4</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">In whose case the god of this world has blinded the minds of the unbelieving so that they might not see the light of the gospel of the glory of Christ, who is the image of God.</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Acts 2:38</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">And Peter said to them, "Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit."</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title">Confession</h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Romans 10:9</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">If you openly declare that Jesus is Lord and believe in your heart that God raised Him from the dead, you will be saved.</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">1 John 1:9</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<div class="helpjuice-accordion" data-controller="editor--toggle-element">
+<h2 class="helpjuice-accordion-title">Repentance</h2>
+<div class="helpjuice-accordion-body active" data-editor--toggle-element-target="body">
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">Ephesians 2:8-9</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">For it is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast.</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+<div class="helpjuice-tab" data-controller="editor--toggle-element">
+<h2 class="helpjuice-tab-title"><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">2 Peter 3:9</span></h2>
+<div class="helpjuice-tab-body active" data-editor--toggle-element-target="body"><p><span style="color:rgb(0,0,0);font-family:Arial, Helvetica, sans-serif;font-size:24px;">The Lord is not slow in keeping His promise, as some understand slowness. Instead He is patient with you, not wanting anyone to perish, but everyone to come to repentance.</span></p></div>
+<div class="helpjuice-tab-toggle"> </div>
+</div>
+</div>
+<div class="helpjuice-accordion-toggle"> </div>
+</div>
+<h2 id="-5"> </h2>
+  </div>
+</article>
+
+
+</body>
+</html>

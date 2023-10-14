@@ -1,8 +1,9 @@
 import requests
+import os
 
 url = "https://cbn.helpjuice.com/api/v3/search"
 headers = {
-    'Authorization': "ec85bdd19f8c58c7532afa26f1ce46aa"            
+    'Authorization': os.environ["HELPJUICE_API_KEY"]            
 }
 categories = {
     "Briefing Notes & Run Sheets": 290795, 

@@ -31,10 +31,10 @@ functions = [
                     "type": "string",
                     "description": "The key word or phrase, e.g. What is Orphan's Promise?",
                 },
-                # "category": {
-                #     "type": "string",
-                #     "enum": ["Briefing Notes & Run Sheets", "Brands", "Programs", "Marketing Campaigns", "Product", "Prayer", "Caller Resources", "CBN PC Resources", "Digital Media"]
-                # },
+                "category": {
+                    "type": "string",
+                    "enum": ["Briefing Notes & Run Sheets", "Brands", "Programs", "Marketing Campaigns", "Product", "Prayer", "Caller Resources", "CBN PC Resources", "Digital Media"]
+                },
             },
             "required": ["key_query"],
         },

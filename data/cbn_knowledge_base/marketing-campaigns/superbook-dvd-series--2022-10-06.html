@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="pdfcrowd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+
+  <style type="text/css">
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}:root{--type-base: 1em;--type-xxxx-small: 30%;--type-xxx-small: 55%;--type-xx-small: 65%;--type-x-small: 75%;--type-small: 85%;--type-medium: 100%;--type-large: 120%;--type-x-large: 160%;--type-xx-large: 200%;--type-xxx-large: 300%;--type-xxxx-large: 400%;--color-text: #000}@media print{.question{page-break-after:always}}html{font-size:16px}body{margin:0;padding:0;font-family:'IBM Plex Sans', 'Helvetica', 'Arial', sans-serif;font-size:var(--type-base);color:var(--color-text);overflow-x:hidden}h1,h2,h3,h4{font-weight:normal;margin:20px 0 15px}h1{font-size:36px}h2{font-size:28px}h3{font-size:24px}h4{font-size:21px}p{font-size:16px;font-weight:normal;margin:0 0 20px 0;line-height:1.5}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;color:#333333;background-color:#f5f5f5;border:1px solid #cccccc;border-radius:4px}.hj-table-of-contents{margin-bottom:20px}.hj-table-of-contents i,.hj-table-of-contents .update-toc{display:none}.hj-table-of-contents h3{margin:30px 0 20px 0 !important}.hj-table-of-contents strong{font-size:16px}.hj-table-of-contents a{display:block;font-size:16px}.hj-alert-block{border-left:5px solid black;position:relative;padding:10px 20px;border-radius:0 2px 2px 0;-webkit-column-break-inside:avoid;-moz-column-break-inside:avoid;break-inside:avoid}.hj-alert-block p.hj-alert-text{margin:10px 0}.hj-alert-block h3.hj-alert-heading{margin:0 0 10px 0}.hj-alert-block div{margin:0}.hj-alert-block.hj-info-block{border-color:#2196f3;background:#daf1f8;color:#3e729f}.hj-alert-block.hj-info-block p.hj-alert-text,.hj-alert-block.hj-info-block h3.hj-alert-heading{color:#3e729f}.hj-alert-block.hj-warning-block{border-color:#ff9800;background:#f8d9ac;color:#8a6d3c}.hj-alert-block.hj-warning-block p.hj-alert-text,.hj-alert-block.hj-warning-block h3.hj-alert-heading{color:#8a6d3c}.hj-alert-block.hj-success-block{border-color:#4caf50;background:#c7e6c7;color:#4a7d61}.hj-alert-block.hj-success-block p.hj-alert-text,.hj-alert-block.hj-success-block h3.hj-alert-heading{color:#4a7d61}.hj-alert-block.hj-error-block{border-color:#f44336;background:#f4cecd;color:#a4474f}.hj-alert-block.hj-error-block p.hj-alert-text,.hj-alert-block.hj-error-block h3.hj-alert-heading{color:#a4474f}b,strong{font-weight:700}img{max-width:100%;display:block;float:none;vertical-align:top;margin:5px auto}a{color:#0560FC}a:hover,a:focus,a:active{color:#1e70fc}ul,ol{margin:0 0 10px 0;padding:0;line-height:1.5}ol ul,ul ul{margin-top:0}ol li,ul li{margin-left:1.5em;padding-left:0}i,cite,em,var,address,dfn{font-style:italic}hr{margin:20px 0;border:0;border-top:1px solid #eeeeee}code{position:relative;padding:0.25rem 0.5rem;border-radius:0.2rem;font-size:var(--type-x-small);font-family:SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace}.breadcrumb{display:none}table{width:100%;max-width:100%;border:none;border-collapse:collapse;empty-cells:show;margin-bottom:20px;background-color:transparent;border-spacing:0}table tr{line-height:200%}table th{background-color:#eeeeee;text-align:left}table th,table td{border:1px solid #dddddd;padding:5px 10px;word-break:break-word}.article-item .follow-article-form,.article-item .was-this-helpful,.article-item .fr-video{display:none}.article-item .question-author{display:-webkit-box;display:-ms-flexbox;display:flex}#glossary-article .glossary-locked-article{display:none}#glossary-article .glossary-article-header input,#glossary-article .glossary-article-header p,#glossary-article .glossary-article-header div{display:none}#glossary-article .glossary-terms h4{margin:0 0 10px}.hidden{display:none !important}article.question{width:100%;margin:0 auto}article.question header{margin-bottom:30px}article.question .info{border-bottom:1px solid #E2E5E9;padding:10px 0;width:100%}article.question .info .breadcrumbs{margin:0;padding:0}article.question .info .breadcrumbs li{display:inline;list-style-type:none;margin:0;font-size:var(--type-small);color:#97A5BA}article.question .info .breadcrumbs li::after{content:'/';display:inline-block;margin:0 8px}article.question .info .breadcrumbs li.article-name::after{content:none}article.question .info p{font-size:var(--type-small);color:#97A5BA;margin:0}article.question .info p span{text-decoration:underline}article.question .article-info .article-category{font-size:var(--type-medium)}article.question .article-info .article-name{margin:0.3em 0}article.question .article-info .article-subtitle{margin:0;font-size:var(--type-large)}article.question .author-info p{margin:0;color:#97A5BA}header.category-pdf{margin-bottom:100px !important}header.category-pdf .category-info{padding:10px 0;width:100%}header.category-pdf .category-info p{margin:0;font-size:var(--type-small)}header.category-pdf .category-info p span.category{text-decoration:underline}header.category-pdf .toc h4{font-size:var(--type-xxx-small);font-weight:normal;color:#97A5BA;text-transform:uppercase;letter-spacing:2px}header.category-pdf .toc .table-of-contents h2,header.category-pdf .toc .table-of-contents h3{margin:0}header.category-pdf .toc .table-of-contents header{margin:0 0 10px 0}header.category-pdf .toc .table-of-contents .subcategorie{list-style-type:none;margin-top:10px}header.category-pdf .toc ol{margin:0 0 0 10px;padding:0}header.category-pdf .toc ol li span{font-size:var(--type-small)}.hj-custom{position:static !important;width:100%;max-width:100% !important;-webkit-box-shadow:none !important;box-shadow:none !important;border:none !important;padding:0 !important;margin:0 0 20px;font-size:16px !important}.hj-custom div{padding:0 !important}.fa-trash-alt{display:none}
+
+  </style>
+</head>
+<body>
+  <article class="question">
+  <header>
+      <meta name="id" content="924662">
+      <meta name="category_id" content="146855">
+      <meta name="accessibility" content="0">
+      <meta name="codename" content="superbook-dvd-series-">
+      <meta name="name" content="Superbook DVD Series ">
+      <meta name="description" content="Marketing Article">
+      <meta name="published" content="true">
+
+    <div class="article-info">
+      <h1 class="article-name">Superbook DVD Series </h1>
+      <p class="article-subtitle">Marketing Article</p>
+    </div>
+
+      <div class="author-info">
+          <p>Written by Tara Jackson | Last published at: October 06, 2022</p>
+      </div>
+    <hr>
+  </header>
+
+  <div id="hj-article-body" class="body fr-view">
+      <div><h2 data-toc="true" id="description-0">
+<span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Description</span><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color:#384C60;"> </span></span>
+</h2></div>
+<table class="fr-table-border-0" style="width: 100%;"><tbody><tr>
+<td style="width: 79.0526%;"><span style="color: rgb(0, 0, 0); font-size: 26px; font-family: Arial, Helvetica, sans-serif;">Superbook DVD Series teaches children timeless moral truths and life lessons through the captivating, Bible-based adventures of two time-traveling children with their robot friend.<em> </em></span></td>
+<td style="width: 20.8421%;">
+<div style="text-align: center;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1665077560591-Superbook%20Graphic.png" style="width: truepx;" class="fr-fic fr-dib"></div>
+<p style="text-align: center;"><br></p>
+</td>
+</tr></tbody></table>
+<hr>
+<p><br></p>
+<div class="hj-alert-block hj-info-block"><div class="alert-message">
+<h2 class="hj-alert-heading" data-toc="true" id="briefing-notes-1"><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Briefing Notes</span></h2>
+<p style="line-height: 1;"><span style="color: rgb(0, 0, 0); font-size: 24px; font-family: Arial, Helvetica, sans-serif;">TBD</span></p>
+</div></div>
+<p><br></p>
+<hr>
+<h2 data-toc="true" id="highlights-2" style='margin-top:15pt;margin-bottom:11pt;font-family:"Open Sans";
+ font-size:21.0pt;'><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color:#DD8B1D;">High</span><span style="color:#2C82C9;">lights</span></span></h2>
+<table style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.0000%;">
+<strong><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Brand:</span></strong><span style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;"><br></span><a href="/_questions/883170" rel="noopener noreferrer" target="_blank"><span style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;">Superbook </span></a>
+</td>
+<td style="width: 50.0000%;">
+<strong><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Programs:</span></strong><span style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;"><br></span><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Superbook Program</span>
+</td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<span style="font-size: 24px;"><strong><span style="color: rgb(0, 0, 0);">Product Type:</span></strong></span><span style="color: rgb(0, 0, 0);"><br></span><span style="font-size: 24px; color: rgb(0, 0, 0);">DVD</span>
+</td>
+<td style="width: 50.0000%;">
+<span style="font-size: 24px;"><strong><span style="color: rgb(0, 0, 0);">DVD Available Through:</span></strong><br></span><a href="https://www.cbn.com/superbook/dvdclub/?cpid=sb_kids_episodes&amp;intcmp=sb_kids_episodes" rel="noopener noreferrer" target="_blank" title="https://www.cbn.com/superbook/dvdclub/?cpid=sb_kids_episodes&amp;intcmp=sb_kids_episodes"><span style="font-size: 24px;">Club Membership</span></a><span style="font-size: 24px;"> <br></span><a href="https://www.cbn.com/giving/special/SBDVDClub.aspx?intcmp=gvsl0229" rel="noopener noreferrer" target="_blank" title="https://www.cbn.com/superbook/dvdclub/?cpid=sb_kids_episodes&amp;intcmp=sb_kids_episodes"><span style="font-size: 24px;">Individual DVD Ordering</span></a>
+</td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<strong><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Languages</span><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">:</span></strong><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;"><br></span><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">English, Spanish, <br>Closed Captioning Available</span>
+</td>
+<td style="width: 50.0000%;">
+<strong><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">DVD Run Time:</span></strong><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;"><br>Average 25 Mins</span>
+</td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<strong><span style="font-size: 24px; color: rgb(0, 0, 0);">Streaming Available Through:</span></strong><br><a href="https://www.cbn.com/superbook/dvdclub/?cpid=sb_kids_episodes&amp;intcmp=sb_kids_episodes" rel="noopener noreferrer" style='box-sizing: border-box; outline: none; background-color: rgb(255, 255, 255); color: rgb(0, 155, 223); text-decoration: none; font-family: "Segoe UI", "Segoe UI Web", Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;' target="_blank" title="https://www.cbn.com/superbook/dvdclub/?cpid=sb_kids_episodes&amp;intcmp=sb_kids_episodes"><span style="box-sizing: border-box; outline: none; font-size: 24px; color: rgb(44, 130, 201);">Club Membership</span></a>
+</td>
+<td style="width: 50.0000%;">
+<strong><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Medium:</span></strong><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;"><br></span><span style="font-size: 24px; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Live-Action and Animation</span>
+</td>
+</tr>
+</tbody></table>
+<p><br></p>
+<hr>
+<h2 data-toc="true" id="faqs-3" style='margin-top:15pt;margin-bottom:11pt;font-family:"Open Sans";
+ font-size:21.0pt;color:#384C60;'><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);">FAQ's</span></span></h2>
+<div class="f-accordion-panel fr-inner">
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: rgb(44, 130, 201);">Series Overview</span></p>
+<p id="isPasted" style="box-sizing: border-box; outline: none; margin: 0px 0px 20px; padding: 0px; color: rgb(116, 116, 116); font-family: Muli, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; outline: none; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px;">* Click the links below for access to the other series overviews:</span></p>
+<ul>
+<li style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(44, 130, 201);"><a href="https://cbn.helpjuice.com/146855-marketing-campaigns/superbook-explorer?from_search=90114547" id="" rel="noopener noreferrer" target="_blank" title="">Superbook: Explorer</a></li>
+<li style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(44, 130, 201);"><a href="https://cbn.helpjuice.com/146855-marketing-campaigns/gizmogo?from_search=90114382" id="" rel="noopener noreferrer" target="_blank" title="">Superbook: GizmoGO!</a></li>
+<li style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(44, 130, 201);"><a href="https://cbn.helpjuice.com/146855-marketing-campaigns/1383791-fruit-of-the-spirit?from_search=90114515" id="" rel="noopener noreferrer" target="_blank" title="">Superbook: Fruit of the Spirit</a></li>
+</ul>
+<div class="f-tab fr-inner ui-sortable">
+<p><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 28px;">Season 1</span></p>
+<table style="width: 100%;"><tbody>
+<tr><td colspan="2" style="width: 99.9027%;"><div style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><strong><span style="color: rgb(0, 0, 0);">Donation Amount Breakdown</span></strong></span></div></td></tr>
+<tr>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><span style="color: rgb(0, 0, 0);">Individual DVD</span> (<span id="isPasted" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Non-Member)</span> </span></td>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$15</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);"><span id="isPasted" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Individual DVD</span> (Member)</span></td>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$10</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Non-Member)</span></td>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$149</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Member)</span></td>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$130</span></td>
+</tr>
+</tbody></table>
+<ul>
+<li style="font-size: 22px;"><a href="https://cbn.helpjuice.com/146856-product/superbook-dvd:-in-the-beginning-?from_search=65071792" id="" rel="noopener noreferrer" target="_blank" title="https://cbn.helpjuice.com/146856-product/superbook-dvd:-in-the-beginning-?from_search=65071792"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);">In the Beginning</span></a></li>
+<li style="font-size: 22px;"><a href="https://cbn.helpjuice.com/146856-product/sb-dvd-the-test-?from_search=65071829" id="" rel="noopener noreferrer" target="_blank" title="https://cbn.helpjuice.com/146856-product/sb-dvd-the-test-?from_search=65071829"><span style="color: rgb(44, 130, 201);"><span style="font-family: Arial, Helvetica, sans-serif;">The Test!</span></span></a></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/897945" rel="noopener noreferrer" target="_blank">Jacob and Esau</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/897948" rel="noopener noreferrer" target="_blank">Let My People Go!</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/897950" rel="noopener noreferrer" target="_blank">The Ten Commandments</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/897963" rel="noopener noreferrer" target="_blank">A Giant Adventure</a></span><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/897963" rel="noopener noreferrer" target="_blank"> </a>‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/897977" rel="noopener noreferrer" target="_blank">Roar!</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/898814" rel="noopener noreferrer" target="_blank">The First Christmas </a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/898823" rel="noopener noreferrer" target="_blank">Miracles of Jesus</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899386" rel="noopener noreferrer" target="_blank">The Last Supper</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899397" rel="noopener noreferrer" target="_blank">He is Risen </a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899410" rel="noopener noreferrer" target="_blank">The Road to Damascus</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;">
+<span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899417" rel="noopener noreferrer" target="_blank">Revelation: The Final Battle!</a></span><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">‍ </span>
+</li>
+</ul>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-tab fr-inner ui-sortable">
+<p><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 28px;">Season 2</span></p>
+<table style="width: 100%;"><tbody>
+<tr><td colspan="2" style="width: 99.9027%;"><div style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><strong><span style="color: rgb(0, 0, 0);">Donation Amount Breakdown</span></strong></span></div></td></tr>
+<tr>
+<td style="width: 50.0000%;">
+<span id="isPasted" style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(0, 0, 0);">Individual DVD</span><span style="color: rgb(56, 76, 96); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> (</span><span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); float: none; display: inline !important;">Non-Member)</span><span style="color: rgb(56, 76, 96); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$15</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<span id="isPasted" style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(255, 255, 255); float: none; display: inline !important;">Individual DVD</span><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> (Member)</span>
+</td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$10</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Non-Member)</span></td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$149</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Member)</span></td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$130</span></td>
+</tr>
+</tbody></table>
+<ul>
+<li style="font-size: 22px;">
+<span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/897930" rel="noopener noreferrer" target="_blank">Jonah</a></span><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">‍ </span>
+</li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/897938" rel="noopener noreferrer" target="_blank">Joseph and Pharaoh's Dream</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/923442" rel="noopener noreferrer" target="_blank">The Fiery Furnace!</a>‍</span><span style="font-family: Arial, Helvetica, sans-serif;"> </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899637" rel="noopener noreferrer" target="_blank">Rahab and the Walls of Jericho</a>‍</span><span style="font-family: Arial, Helvetica, sans-serif;"> </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899647" rel="noopener noreferrer" target="_blank">Esther: For Such a Time as This</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899648" rel="noopener noreferrer" target="_blank">John the Baptist</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899656" rel="noopener noreferrer" target="_blank">Paul and the Shipwreck</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899660" rel="noopener noreferrer" target="_blank">Job</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899676" rel="noopener noreferrer" target="_blank">Noah and the Ark</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/923440">Gideon</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899948">Peter's Denial</a>‍</span><span style="font-family: Arial, Helvetica, sans-serif;"> </span></span></li>
+<li style="font-size: 22px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/923438" rel="noopener noreferrer" target="_blank">The Prodigal Son</a></span><span style="font-family: Arial, Helvetica, sans-serif;">‍ </span></span></li>
+<li style="font-size: 22px;">
+<span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="/_questions/899957" rel="noopener noreferrer" target="_blank">Elijah and the Prophets of Baal</a></span><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">‍ </span>
+</li>
+</ul>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-tab fr-inner ui-sortable">
+<p><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 28px;">Season 3</span></p>
+<table style="width: 100%;"><tbody>
+<tr><td colspan="2" style="width: 99.9027%;"><div style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><strong><span style="color: rgb(0, 0, 0);">Donation Amount Breakdown</span></strong></span></div></td></tr>
+<tr>
+<td style="width: 50.0000%;">
+<span id="isPasted" style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(0, 0, 0);">Individual DVD</span><span style="color: rgb(56, 76, 96); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> (</span><span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); float: none; display: inline !important;">Non-Member)</span><span style="color: rgb(56, 76, 96); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$15</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<span id="isPasted" style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(255, 255, 255); float: none; display: inline !important;">Individual DVD</span><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> (Member)</span>
+</td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$10</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Non-Member)</span></td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$149</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Member)</span></td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$130</span></td>
+</tr>
+</tbody></table>
+<ul>
+<li style="font-size: 22px;">
+<a href="/_questions/899479" rel="noopener noreferrer" target="_blank"><span style="font-family: Arial, Helvetica, sans-serif;">Ruth</span></a><span style="font-family: Arial, Helvetica, sans-serif;">‍</span>
+</li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/899560" rel="noopener noreferrer" target="_blank">The Tower of Babel</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/899590" rel="noopener noreferrer" target="_blank">The Birth of John the Baptist</a>‍</span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/900579" rel="noopener noreferrer" target="_blank">Isaac and Rebekah</a>‍</span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/900592" rel="noopener noreferrer" target="_blank">Naaman and the Servant Girl</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;">‍<a href="/_questions/900853" rel="noopener noreferrer" target="_blank">Samuel and the Call of God</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);"><a href="https://cbn.helpjuice.com/146856-product/900871-sb-dvd-stream-product-article?from_search=66179430" rel="noopener noreferrer" target="_blank">David and Saul</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);"><a href="/_questions/900940" rel="noopener noreferrer" target="_blank">Nehemiah</a></span><span style="color: rgb(184, 49, 47);">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);"><a href="/_questions/901400" rel="noopener noreferrer" target="_blank">Elisha and the Syrians</a></span></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);"><a href="/_questions/901435" rel="noopener noreferrer" target="_blank">Lazarus</a></span><span style="color: rgb(184, 49, 47);">‍</span></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);"><a href="/_questions/901441" rel="noopener noreferrer" target="_blank">King Solomon</a></span><span style="color: rgb(184, 49, 47);">‍</span></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);"><a href="/_questions/901460" rel="noopener noreferrer" target="_blank">Nebuchadnezzar's Dream</a></span><span style="color: rgb(184, 49, 47);">‍</span></span></li>
+<li style="font-size: 22px;">
+<span style="color: rgb(44, 130, 201);"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/923425" rel="noopener noreferrer" target="_blank">The Good Samaritan</a>‍ </span> </span><span style="color: rgb(184, 49, 47);">  </span>‍</li>
+</ul>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-tab fr-inner ui-sortable">
+<p><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 28px;">Season 4</span></p>
+<table style="width: 100%;"><tbody>
+<tr><td colspan="2" style="width: 99.9027%;"><div id="isPasted" style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><strong><span style="color: rgb(0, 0, 0);">Donation Amount Breakdown</span></strong></span></div></td></tr>
+<tr>
+<td style="width: 50.0000%;">
+<span id="isPasted" style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(0, 0, 0);">Individual DVD</span><span style="color: rgb(56, 76, 96); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> (</span><span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); float: none; display: inline !important;">Non-Member)</span><span style="color: rgb(56, 76, 96); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$25</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<span id="isPasted" style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(255, 255, 255); float: none; display: inline !important;">Individual DVD</span><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> (Member)</span>
+</td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$25</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Non-Member)</span></td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$195</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Member)</span></td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$195</span></td>
+</tr>
+</tbody></table>
+<ul>
+<li style="font-size: 22px;">
+<a href="https://cbn.helpjuice.com/sb-dvd-jesus-feeds-the-hungry?from_search=66179477" rel="noopener noreferrer" target="_blank"><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Jesus Feeds the Hungry</span></a><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(44, 130, 201);">‍</span><span style="font-family: Arial, Helvetica, sans-serif;"> </span>
+</li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/910408" rel="noopener noreferrer" target="_blank">Peter and Cornelius</a>‍</span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/910422" rel="noopener noreferrer" target="_blank">Paul and Silas</a>‍</span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/910443" rel="noopener noreferrer" target="_blank">Solomon's Temple</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/910448" rel="noopener noreferrer" target="_blank">SB DVD: Peter's Escape</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/910489" rel="noopener noreferrer" target="_blank">Jesus Heals the Blind</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(184, 49, 47);">‍</span><span style="color: rgb(44, 130, 201);"><a href="/_questions/910491" rel="noopener noreferrer" target="_blank">Joshua and Caleb</a></span><span style="color: rgb(184, 49, 47);">‍ </span></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/910503" rel="noopener noreferrer" target="_blank">Elijah and the Widow</a>‍</span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/910507" rel="noopener noreferrer" target="_blank">Teach Us to Pray</a>‍</span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/910511" rel="noopener noreferrer" target="_blank">Jeremiah</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/911343" rel="noopener noreferrer" target="_blank">Jesus in the Wilderness</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/911357" rel="noopener noreferrer" target="_blank"><span style="color: rgb(44, 130, 201);">Paul and Barnabas</span></a></span></li>
+<li>
+<span style="color: rgb(44, 130, 201);"><a href="/_questions/911369" rel="noopener noreferrer" target="_blank"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;">Philip</span></a>‍ </span>‍</li>
+</ul>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-tab fr-inner ui-sortable">
+<p><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 28px;">Season 5</span></p>
+<table style="width: 100%;"><tbody>
+<tr><td colspan="2" style="width: 99.9027%;"><div id="isPasted" style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><strong><span style="color: rgb(0, 0, 0);">Donation Amount Breakdown</span></strong></span></div></td></tr>
+<tr>
+<td style="width: 50.0000%;">
+<span id="isPasted" style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(0, 0, 0);">Individual DVD</span><span style="color: rgb(56, 76, 96); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> (</span><span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); float: none; display: inline !important;">Non-Member)</span><span style="color: rgb(56, 76, 96); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span>
+</td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$25</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<span id="isPasted" style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(255, 255, 255); float: none; display: inline !important;">Individual DVD</span><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> (Member)</span>
+</td>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">$25</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Non-Member)</span></td>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);"> - (Not Released Yet)</span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Complete Set (Member)</span></td>
+<td style="width: 50.0000%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);"> - (Not Released Yet)</span></td>
+</tr>
+</tbody></table>
+<ul>
+<li style="font-size: 22px;">
+<a href="https://cbn.helpjuice.com/146856-product/924735-sb-dvd-the-birth-of-moses?from_search=66182347" rel="noopener noreferrer" target="_blank"><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">The Birth of Moses</span></a><span style="font-family: Arial, Helvetica, sans-serif;">‍</span>
+</li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a class="currently-active" href="/_questions/911424" rel="noopener noreferrer" target="_blank">Nicodemus</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/911471" rel="noopener noreferrer" target="_blank">Zacchaeus</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/911510" rel="noopener noreferrer" target="_blank">The Sermon on The Mount</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/911564" rel="noopener noreferrer" target="_blank">Isaiah</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/923368" rel="noopener noreferrer" target="_blank">Baptized!</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/911578" rel="noopener noreferrer" target="_blank">Jesus-Friend of Sinners</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/912256" rel="noopener noreferrer" target="_blank">Paul Keeps the Faith</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/912262" rel="noopener noreferrer" target="_blank">Love Your Enemies</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/912265" rel="noopener noreferrer" target="_blank">Paul and The Unknown Part 1</a></span></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="https://cbn.helpjuice.com/146856-product/sb-dvd-paul-the-unknown-god-part-2-?from_search=69560570" rel="noopener noreferrer" target="_blank">Paul The Unknown God Part 2</a></span></li>
+<li style="font-size: 22px;"><a href="https://cbn.helpjuice.com/146856-product/sb-dvd-doubting-thomas?from_search=69560685" rel="noopener noreferrer" target="_blank"><span style="font-family: Arial,Helvetica,sans-serif;">Doubting Thomas</span></a></li>
+<li style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/912281" rel="noopener noreferrer" target="_blank">The Promise of A Child</a></span></li>
+<li class="currently-active" style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"><a href="/_questions/912318" rel="noopener noreferrer" target="_blank">Rescued!</a></span></li>
+<li style="font-size: 22px;"><a href="/_questions/912325" rel="noopener noreferrer" target="_blank"><span style="font-family: Arial, Helvetica, sans-serif;">Heroes of The Bible</span></a></li>
+<li style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><a href="/_questions/1218559" id="" rel="noopener noreferrer" target="_blank" title="">The Widow's Mite</a></li>
+</ul>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<p><br></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: rgb(44, 130, 201);">Ways to Stream</span></p>
+<ul>
+<li style="line-height: 1.4; font-size: 22px;">
+<span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Web </span><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;"><a href="https://www.cbn.com/partners/video/premiumcontent/kids" rel="noopener noreferrer" target="_blank" title="https://www.cbn.com/partners/video/premiumcontent/kids">Superbook Streaming Website</a></span>
+</li>
+<li style="line-height: 1.4; font-size: 22px;"><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Mobile - search your mobile application store for the <strong>Superbook Kids Bible App </strong></span></li>
+<li style="line-height: 1.4; font-size: 22px;"><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Roku</span></li>
+<li style="line-height: 1.4; font-size: 22px;"><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Apple TV</span></li>
+<li style="line-height: 1.4; font-size: 22px;"><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Firestick</span></li>
+<li style="line-height: 1.4; font-size: 22px;"><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Google TV </span></li>
+<li style="line-height: 1.4; font-size: 22px;"><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">Samsung SmartTV</span></li>
+</ul>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: rgb(44, 130, 201);">Other Languages</span></p>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px;">Superbook streams in 43 languages in over 100 countries.</span><span style="font-size: 22px;"><span style="font-family: Arial, Helvetica, sans-serif;"> </span></span><a href="https://www.cbn.com/superbook/dvdclub/?cpid=sb_kids_episodes&amp;intcmp=sb_kids_episodes" rel="noopener noreferrer" target="_blank" title="https://www.cbn.com/superbook/dvdclub/?cpid=sb_kids_episodes&amp;intcmp=sb_kids_episodes"><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 22px;">Superbook Link to Other Languages</span></a></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<p><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 28px;">What age is the series geared towards?</span></p>
+<p><span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: none; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">The series is intended for the 7–12 age range, although some episodes will be suitable for younger ages. Due to some of the dramatic elements, ratings will be made available on any DVD that we feel should be screened by a parent.</span></p>
+<span style="font-family: Arial,Helvetica,sans-serif;"><i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i></span>
+</div>
+<div class="f-accordion-panel fr-inner">
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: rgb(44, 130, 201);">How can I watch a free Superbook episode?</span></p>
+<p><span data-contrast="none" lang="EN-US" style="color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 22px; font-family: Arial, Helvetica, sans-serif; line-height: 23.7417px; font-variant-ligatures: none !important;"><span style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;">Download the free </span></span><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 24px;"><span data-contrast="none" lang="EN-US" style="color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-weight: bold; line-height: 23.7417px; font-variant-ligatures: none !important; font-size: 22px;"><span style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;">Superbook Kids Bible App</span></span><span data-contrast="none" lang="EN-US" style="color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; line-height: 23.7417px; font-variant-ligatures: none !important; font-size: 22px;"><span style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-color: inherit;"> from your smartphone, tablet, Kindle, or Smart TV. The app features free, full-length episodes from Seasons 1-3. </span></span></span></span></p>
+<span style="font-family: Arial,Helvetica,sans-serif;"><i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i><i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i><i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i></span>
+</div>
+<div class="f-accordion-panel" data-controller="accordion">
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: rgb(44, 130, 201);">Why are some Superbook episodes available on Amazon but not all?</span></p>
+<p id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Seasons 1 – 3 of the Superbook series are available to stream for free on Amazon. Currently, there are no plans to release seasons 4 – 5 however, they are available for CBN Animation Club members on the CBN Family App and Superbook Kids Bible App.</span></p>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Charisma Publishing has a contract with CBN to purchase Superbook DVDs to sell in retail outlets. These DVDs may then be sold online (Amazon) or in physical stores.</span></p>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">Note: It is also possible that some DVDs are being resold from CBN donors/CBN Animation Club members via Amazon, eBay, etc. Callers may purchase from Amazon however, CBN encourages callers to buy at their own discretion. CBN is not responsible for any damaged items sold by a third party seller.</span> </p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i><a class="delete-accordion fa-trash-alt" contenteditable="false" data-action="accordion#delete" href="#">Delete</a>
+</div>
+<p><br></p>
+<h2 data-toc="true" id="ways-to-order-4" style='margin-top:15pt;margin-bottom:11pt;font-family:"Open Sans";
+ font-size:21.0pt;color:#384C60;'><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(44, 130, 201);">Ways to Order</span></span></h2>
+<div class="f-accordion-panel fr-inner">
+<p><span style="color: rgb(44, 130, 201);"><span style="font-size: 28px;">Call 1-800-700-7000</span></span></p>
+<p style="box-sizing: border-box; outline: none; margin: 0px; padding: 20px 0px; color: rgb(116, 116, 116); font-family: Muli, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; outline: none; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><em style="box-sizing: border-box; outline: none;"><strong style="box-sizing: border-box; outline: none; font-weight: bolder;"><span style="box-sizing: border-box; outline: none; color: rgb(0, 0, 0);">(For US Product Orders)</span></strong></em></span></p>
+<p style="box-sizing: border-box; outline: none; margin: 0px; padding: 20px 0px; color: rgb(116, 116, 116); font-family: Muli, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; outline: none; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 24px;"><strong style="box-sizing: border-box; outline: none; font-weight: bolder;">Category</strong></span><span style="box-sizing: border-box; outline: none; font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">: Product<br style="box-sizing: border-box; outline: none;"></span><span style="box-sizing: border-box; outline: none; font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(44, 130, 201);"><strong style="box-sizing: border-box; outline: none; font-weight: bolder;">Project</strong></span><span style="box-sizing: border-box; outline: none; font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">: CBN Animation DVD</span></p>
+<p style="box-sizing: border-box; outline: none; margin: 0px; padding: 20px 0px; color: rgb(116, 116, 116); font-family: Muli, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; outline: none; font-size: 20px;"><strong style="box-sizing: border-box; outline: none; font-weight: bolder;"><em style="box-sizing: border-box; outline: none;"><span style="box-sizing: border-box; outline: none; color: rgb(0, 0, 0);">(For Canadian Product Orders)</span></em></strong></span></p>
+<p style="box-sizing: border-box; outline: none; margin: 0px; padding: 20px 0px; color: rgb(116, 116, 116); font-family: Muli, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; outline: none; font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);"><span style="box-sizing: border-box; outline: none; color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 24px;"><strong style="box-sizing: border-box; outline: none; font-weight: bolder;">Category</strong></span><span style="box-sizing: border-box; outline: none; font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">: Product<br style="box-sizing: border-box; outline: none;"></span><span style="box-sizing: border-box; outline: none; font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(44, 130, 201);"><strong style="box-sizing: border-box; outline: none; font-weight: bolder;">Project</strong></span><span style="box-sizing: border-box; outline: none; font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">: Canada Animation DVD</span></span></p>
+<span style="font-family: Arial,Helvetica,sans-serif;"><i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i></span>
+</div>
+<div class="f-accordion-panel fr-inner">
+<p><span style="color: rgb(44, 130, 201); font-size: 28px; font-family: Arial, Helvetica, sans-serif;">Visit Online</span></p>
+<p><a href="https://www.cbn.com/giving/special/SBDVDClub.aspx?intcmp=gvsl0229" rel="noopener noreferrer" target="_blank" title="Superbook DVD Order Form"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(44, 130, 201);">Superbook DVD Order Form</span></a><br><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">Agent Note: The Online Order Form must be completed by the caller.</span></p>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-accordion-panel fr-inner">
+<p><span style="color: rgb(44, 130, 201); font-size: 28px; font-family: Arial, Helvetica, sans-serif;">Mail-In Donation</span></p>
+<div class="f-tab fr-inner ui-sortable">
+<p><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 28px;">U.S.</span></p>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);"><strong>Address on Envelope:</strong></span></p>
+<p style="margin-left: 40px;"><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;">CBN <br>977 Centerville Tpke<br>Virginia Beach VA 23463</span></span></p>
+<p><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">Payable to: </span></strong><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;">CBN</span></span></p>
+<p><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;">Be sure to include the Superbook DVD title in the memo portion of your check. Also, be sure to indicate the number of DVDs you wish to order. </span></span></p>
+<p><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(44, 130, 201);"><em>Agent Note</em></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);"><em>: Mail-in donations are only accepted for individual DVD ordering, <strong>not </strong></em></span></span></span><span style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);"><em>CBN Animation </em></span></span><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);"><em>Club membership.</em></span></span></span></p>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<div class="f-tab fr-inner ui-sortable">
+<p><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Canada</span></p>
+<p><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);"><strong>Address on Envelope:</strong></span></p>
+<p style="margin-left: 20px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">CBA Canada<br>680 Progress Avenue - Unit #2 <br>Scarborough, ON M1H3A5 Canada </span></p>
+<p><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);">Payable to: </span></strong><span style="color: rgb(0, 0, 0);"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;">CBA Canada</span></span></p>
+<div style='color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; font-family: "Segoe UI", "Segoe UI Web", Arial, Verdana, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);'><span style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;">Be sure to include the Superbook DVD title in the memo portion of your check. Also, be sure to indicate the number of DVDs you wish to order.</span></div>
+<p><br></p>
+<p><span style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(44, 130, 201);"><em>Agent Note</em></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 0);"><em>: Mail-in donations are only accepted for individual DVD ordering, <strong>not </strong></em><em>CBN Animation C</em><em>lub membership.</em></span></span></p>
+<i class="far fa-arrows-alt" title="Move" contenteditable="false"></i>
+</div>
+<i class="far fa-arrows-alt ui-sortable-handle" title="Move" contenteditable="false"></i>
+</div>
+<p><br></p>
+  </div>
+</article>
+
+
+</body>
+</html>

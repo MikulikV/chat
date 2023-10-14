@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" class="pdfcrowd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+
+  <style type="text/css">
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}:root{--type-base: 1em;--type-xxxx-small: 30%;--type-xxx-small: 55%;--type-xx-small: 65%;--type-x-small: 75%;--type-small: 85%;--type-medium: 100%;--type-large: 120%;--type-x-large: 160%;--type-xx-large: 200%;--type-xxx-large: 300%;--type-xxxx-large: 400%;--color-text: #000}@media print{.question{page-break-after:always}}html{font-size:16px}body{margin:0;padding:0;font-family:'IBM Plex Sans', 'Helvetica', 'Arial', sans-serif;font-size:var(--type-base);color:var(--color-text);overflow-x:hidden}h1,h2,h3,h4{font-weight:normal;margin:20px 0 15px}h1{font-size:36px}h2{font-size:28px}h3{font-size:24px}h4{font-size:21px}p{font-size:16px;font-weight:normal;margin:0 0 20px 0;line-height:1.5}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;color:#333333;background-color:#f5f5f5;border:1px solid #cccccc;border-radius:4px}.hj-table-of-contents{margin-bottom:20px}.hj-table-of-contents i,.hj-table-of-contents .update-toc{display:none}.hj-table-of-contents h3{margin:30px 0 20px 0 !important}.hj-table-of-contents strong{font-size:16px}.hj-table-of-contents a{display:block;font-size:16px}.hj-alert-block{border-left:5px solid black;position:relative;padding:10px 20px;border-radius:0 2px 2px 0;-webkit-column-break-inside:avoid;-moz-column-break-inside:avoid;break-inside:avoid}.hj-alert-block p.hj-alert-text{margin:10px 0}.hj-alert-block h3.hj-alert-heading{margin:0 0 10px 0}.hj-alert-block div{margin:0}.hj-alert-block.hj-info-block{border-color:#2196f3;background:#daf1f8;color:#3e729f}.hj-alert-block.hj-info-block p.hj-alert-text,.hj-alert-block.hj-info-block h3.hj-alert-heading{color:#3e729f}.hj-alert-block.hj-warning-block{border-color:#ff9800;background:#f8d9ac;color:#8a6d3c}.hj-alert-block.hj-warning-block p.hj-alert-text,.hj-alert-block.hj-warning-block h3.hj-alert-heading{color:#8a6d3c}.hj-alert-block.hj-success-block{border-color:#4caf50;background:#c7e6c7;color:#4a7d61}.hj-alert-block.hj-success-block p.hj-alert-text,.hj-alert-block.hj-success-block h3.hj-alert-heading{color:#4a7d61}.hj-alert-block.hj-error-block{border-color:#f44336;background:#f4cecd;color:#a4474f}.hj-alert-block.hj-error-block p.hj-alert-text,.hj-alert-block.hj-error-block h3.hj-alert-heading{color:#a4474f}b,strong{font-weight:700}img{max-width:100%;display:block;float:none;vertical-align:top;margin:5px auto}a{color:#0560FC}a:hover,a:focus,a:active{color:#1e70fc}ul,ol{margin:0 0 10px 0;padding:0;line-height:1.5}ol ul,ul ul{margin-top:0}ol li,ul li{margin-left:1.5em;padding-left:0}i,cite,em,var,address,dfn{font-style:italic}hr{margin:20px 0;border:0;border-top:1px solid #eeeeee}code{position:relative;padding:0.25rem 0.5rem;border-radius:0.2rem;font-size:var(--type-x-small);font-family:SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace}.breadcrumb{display:none}table{width:100%;max-width:100%;border:none;border-collapse:collapse;empty-cells:show;margin-bottom:20px;background-color:transparent;border-spacing:0}table tr{line-height:200%}table th{background-color:#eeeeee;text-align:left}table th,table td{border:1px solid #dddddd;padding:5px 10px;word-break:break-word}.article-item .follow-article-form,.article-item .was-this-helpful,.article-item .fr-video{display:none}.article-item .question-author{display:-webkit-box;display:-ms-flexbox;display:flex}#glossary-article .glossary-locked-article{display:none}#glossary-article .glossary-article-header input,#glossary-article .glossary-article-header p,#glossary-article .glossary-article-header div{display:none}#glossary-article .glossary-terms h4{margin:0 0 10px}.hidden{display:none !important}article.question{width:100%;margin:0 auto}article.question header{margin-bottom:30px}article.question .info{border-bottom:1px solid #E2E5E9;padding:10px 0;width:100%}article.question .info .breadcrumbs{margin:0;padding:0}article.question .info .breadcrumbs li{display:inline;list-style-type:none;margin:0;font-size:var(--type-small);color:#97A5BA}article.question .info .breadcrumbs li::after{content:'/';display:inline-block;margin:0 8px}article.question .info .breadcrumbs li.article-name::after{content:none}article.question .info p{font-size:var(--type-small);color:#97A5BA;margin:0}article.question .info p span{text-decoration:underline}article.question .article-info .article-category{font-size:var(--type-medium)}article.question .article-info .article-name{margin:0.3em 0}article.question .article-info .article-subtitle{margin:0;font-size:var(--type-large)}article.question .author-info p{margin:0;color:#97A5BA}header.category-pdf{margin-bottom:100px !important}header.category-pdf .category-info{padding:10px 0;width:100%}header.category-pdf .category-info p{margin:0;font-size:var(--type-small)}header.category-pdf .category-info p span.category{text-decoration:underline}header.category-pdf .toc h4{font-size:var(--type-xxx-small);font-weight:normal;color:#97A5BA;text-transform:uppercase;letter-spacing:2px}header.category-pdf .toc .table-of-contents h2,header.category-pdf .toc .table-of-contents h3{margin:0}header.category-pdf .toc .table-of-contents header{margin:0 0 10px 0}header.category-pdf .toc .table-of-contents .subcategorie{list-style-type:none;margin-top:10px}header.category-pdf .toc ol{margin:0 0 0 10px;padding:0}header.category-pdf .toc ol li span{font-size:var(--type-small)}.hj-custom{position:static !important;width:100%;max-width:100% !important;-webkit-box-shadow:none !important;box-shadow:none !important;border:none !important;padding:0 !important;margin:0 0 20px;font-size:16px !important}.hj-custom div{padding:0 !important}.fa-trash-alt{display:none}
+
+  </style>
+</head>
+<body>
+  <article class="question">
+  <header>
+      <meta name="id" content="1244586">
+      <meta name="category_id" content="116263">
+      <meta name="accessibility" content="0">
+      <meta name="codename" content="paid-adscommerical-resources">
+      <meta name="name" content="Paid Ads/Commercial Resources">
+      <meta name="description" content="Caller Resources">
+      <meta name="published" content="true">
+
+    <div class="article-info">
+      <h1 class="article-name">Paid Ads/Commercial Resources</h1>
+      <p class="article-subtitle">Caller Resources</p>
+    </div>
+
+      <div class="author-info">
+          <p>Written by Tara Jackson | Last published at: October 12, 2023</p>
+      </div>
+    <hr>
+  </header>
+
+  <div id="hj-article-body" class="body fr-view">
+      <div><p data-toc="true" id="description-0"><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Description</span><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color:#384C60;"> </span></span></p></div>
+<table class="fr-table-border-0" style="width: 100%;"><tbody><tr>
+<td style="width: 78.9809%;"><p style="margin-top:0pt;margin-bottom:15pt;font-family:Calibri;font-size:12.0pt;
+ color:#384C60;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="color: rgb(0, 0, 0); font-size: 24px;">Paid Ads/Commercial resources provide a list of all of the external commercials that have been displayed during the 700 Club Broadcast. </span></span></p></td>
+<td style="width: 20.8599%;">
+<div style="text-align: center;"><img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/7157/direct/1644340655902-advertising.png" style="width: truepx;" class="fr-fic fr-dib"></div>
+<p style="text-align: center;"><br></p>
+<br>
+</td>
+</tr></tbody></table>
+<p><br></p>
+<hr>
+<div class="hj-alert-block hj-info-block"><div class="alert-message">
+<h2 class="hj-alert-heading" data-toc="true" id="briefing-notes-0"><span style="color: rgb(44, 130, 201); font-family: Arial, Helvetica, sans-serif;">Briefing Notes</span></h2>
+<p style="line-height: 1;"><br></p>
+</div></div>
+<hr>
+<h2 data-toc="true" id="paid-adcommerical-list-1" style='margin-top:15pt;margin-bottom:11pt;font-family:"Open Sans";
+ font-size:21.0pt;'><span style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: rgb(44, 130, 201);">Paid Ad/Commerical List</span></h2>
+<p style='margin-top: 15pt; margin-bottom: 11pt; font-family: "Open Sans"; font-size: 21pt; line-height: 1;'><span style="font-size: 22px; font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0);">The following list<span id="isPasted" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"> provides the commercial name, and additional information that may be displayed on the commercial such as phone number, website, and promo code (if applicable). For additional information, callers must contact the external company. </span></span></span></p>
+<p style="margin-top: 15pt; margin-bottom: 11pt; line-height: 1;"><span id="isPasted"><span style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Companies who want to advertise with CBN may visit </span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: rgb(0, 0, 0);">CBN.com</span><span style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"> and fill out the form under "Advertise with Us." To view the form, click </span></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><span style="color: rgb(44, 130, 201);"><span id="isPasted"><a href="https://www.cbn.com/contact/feedback-advertise-with-cbn.aspx?mobile=false" id="" rel="noopener noreferrer" target="_blank" title="">here</a></span></span><span style="color: rgb(0, 0, 0);"><span id="isPasted">. </span></span></span></p>
+<table style="width: 100%;"><tbody>
+<tr>
+<td style="width: 50.4484%;">
+<p><br></p>
+<div style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><strong><span style="color: rgb(184, 49, 47);">Commercial Name</span></strong></span></div>
+</td>
+<td style="width: 49.4395%;">
+<p><br></p>
+<div style="text-align: center;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><strong><span style="color: rgb(184, 49, 47);">Additional Details</span></strong></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(184, 49, 47);"> </span></strong></span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">“A Beautiful Day In The Neighborhood” Movie </span></strong></td>
+<td style="width: 49.4395%;"><div>
+<span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(Now On Blu-ray &amp; DVD)</span> </div></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><span style="color: rgb(0, 0, 0);">Annuity General</span>  </span></strong></td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-925-4189; Free Copy Of "Annuity Do’s &amp; Don’ts For Baby Boomers” &amp; "Annuity Rate Report")<br>(1-800-885-6464; Free Copy Of "How to Safeguard Your Retirement with Annuities" &amp; "Annuity Rate Report")</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-997-1605); Free Copy of "Income Plus Strategies")</span><br>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Artza Box </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(artzabox.com; code CBN20 for 20% off)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Avia Dental Plan </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-888-431-2273)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Babbel </strong>[language learning]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">babbel.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Be Active Plus</strong> [sciatic nerve pain]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-586-3604; BuyBeActivePlus.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Before The Wrath</span><em> </em></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(beforethewrath.com) </span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">2023 Benefits Helpline </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-218-6041)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Big George Foreman</strong> [Movie]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(biggeorgeforeman.movie)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Brinks Money Back Prepaid Mastercard </span></strong></span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-441-3670)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Cancer Treatment Centers of America</span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-855-648-CTCA, cancercenter.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Car Shield </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-778-6903)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Choice Home Warranty </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-360-7385; choicehome.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Christian Healthcare Ministries</strong></span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-791-6225; CHMinistries.org)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>City of Hope</strong> [cancer center] </span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-240-HOPE; <a href="//cancercenter.com">cancercenter.com</a>)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); font-size: 18px;"><strong>Clear Choice</strong> [dental implants]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-888-972-2411; clearchoice.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Confession Musical</strong> [Movie] by Beverly Lewis</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(Confessionmusicalmovie.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Continuous Glucose Monitoring (CGM) </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-460-2876)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Creation Museum</span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(creationmuseum.org and 888-582-4253)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Credit Repair </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-855-255-0263)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Diabetes Solution Center</span><em> </em></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-453-1618)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Dry Eye Mask by Wizard Research</span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">dryeyemask.com (213-471-8050)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">EarGo</span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-957-6992)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Easy Medicare </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-579-6524) </span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><span style="color: rgb(0, 0, 0);">eHealth Medicare Coverage Card</span> </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-866-739-2880)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Endurance </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[vehicle protection plan]</span><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> </span></strong>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-709-4276)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Freedom Debt Relief </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-838-1370)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>FreeJesusKidsGuide.com</strong> [Mike Huckabee]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">FreeJesusKidsGuide.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Gotham Stack Master </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-385-2718)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Guardian Legal Network </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-932-1580)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Head Shaver</strong></span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-706-1383; GetHeadShaver.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 18px; color: rgb(0, 0, 0);">Hearing Assist</span></span><em><span style="font-family: Arial,Helvetica,sans-serif;"> </span></em></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-419-2222) </span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>"I Heard The Bells" </strong>[Movie]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">IHeardTheBellsMovie.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Inogen </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[portable oxygen]</span><em><strong> </strong></em>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-920-1607)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">J.D. Mellberg </span></strong></td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-926-1155; Free Copy Of “Annuity Do’s &amp; Don’ts For Baby Boomers”)</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-885-1717; Free Copy of "Annuity Do's and Don'ts")</span><br>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Jardiance </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[diabetes medication]</span>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-844-JARDASKS)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Jesus Revolution</span></strong> [Movie]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">JesusRevolution.Movie</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">JG Wentworth</span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> [Financing]</span>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(877-CASH-NOW; jgwentworth.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">JibJab</span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> [</span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><span style="color: rgb(0, 0, 0);">digital Christmas cards]</span> </span>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(jibjab.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Joel Osteen’s Inspiration Cube </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-811-1074)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><span style="color: rgb(0, 0, 0);">Kardia Mobile </span></span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">[h</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><span style="color: rgb(0, 0, 0);">eart monitoring card]</span></span>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Kardia.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Kids' Guide</strong> [Mike Huckabee]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">SocialismStinks.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Left Behind Rise of the AntiChrist </span></strong><span style="color: rgb(0, 0, 0);">[Movie]</span></span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">FathomEvents.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Legxercise</strong> [automatic leg mover to promote circulation] </span></td>
+<td style="width: 49.4395%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-331-0319, LegXercise.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Life Alert </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-466-1925)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Life Line Screening </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[stroke prevention]</span><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> </span></strong>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-324-9982)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Lighthouse Life </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-976-8745)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Log Homes </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(eloghomes.com; 1-888-675-3678)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">2022 Benefits Helpline </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-218-6041)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Medicare Advantage Plan</span><em> </em></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-431-7318)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Medicare Part C Plan</span><em> </em></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-492-7198)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Medicare Coverage Helpline </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-256-3200)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Med 4 Home Portable Nebuilizer</span></strong></span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-296-9412; Med4Home.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">MRHFM Law Firm </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-300-1893; Free Copy Of “100 Questions &amp; Answers About Mesothelioma”)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">My Pillow </span></strong></td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-694-5329) mypillow.com (promo code: MY676)</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-575-4134) (promo code for bed sheets: JOY17)</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-947-9512) (promo code for Percale bed sheets: MY631)</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-939-5407) (promo code for Giza Dreams bed sheets: TV546)</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-940-5596) (promo code for My Slippers: Mike284)</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-891-8704) (promo code for BOGO Extravaganza: BOGO149)</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1800-419-9508) (promo code for 20th Anniversary Limited Edition: Sleep149)</span><br><span style="font-size: 18px; color: rgb(0, 0, 0);">(1-800-708-4944) (promo code for My Pillow 2.0; MY663)</span><br>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Nano Advanced Hearing Technology </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-686-1125)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Norton LifeLock </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[computer security]</span><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> </span></strong>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-680-0927) LifeLock.com/GET25 (promo code for 25% off 1st year: 25NOW)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Nutrisystem</span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-855-296-EASY)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Page Publishing </span></strong><span style="color: rgb(0, 0, 0);">[free author’s submission kit]</span><strong><span style="color: rgb(0, 0, 0);"> </span></strong></span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-556-9281)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Peachtree Financial </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-866-814-7988)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Peptiva </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[sleep support + prodigest]</span><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> </span></strong>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(TryPeptiva.com; Text: DEGREE To: 42424 to try complimentary sample)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Publishers Clearing House </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(pch.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">PureWick</span><em> </em></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-661-9910); PureWickAtHome.com </span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Regent University </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(regent.edu); OnlyRegent.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Regent University Law School</span><em> </em></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-757-352-4584)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Relaxium Sleep</strong> [sleep aid medicine]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-614-9122); TryRelaxium.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Revitive </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[feet rejuvenator]</span><em><strong><span style="color: rgb(0, 0, 0);"> </span></strong></em>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-322-8270)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Route 60</strong> [Movie]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(Route60.movie)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Rue lala</strong> [online clothing store]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">ruelala.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Scoop</span></strong><span style="color: rgb(0, 0, 0);"> [Therapeutic Home Fitness &amp; Pain Therapy Machine]</span></span></td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-</span><span id="isPasted" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">844-467-2667); TryTheScoop.com</span>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Select Advisor </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[Funeral Insurance Plan] </span>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-799-7457) </span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">SeroVital</span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">TrySeroVital.com (1-800-403-3117)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Safety America </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(877-BIO-SHIELD)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Select Quote </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-218-0946) </span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Sid Roth's Book </strong>["There Must Be Something More!"]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Free download at SidRoth.org/Think</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><strong><span style="color: rgb(0, 0, 0);">Silac Insurance Company</span></strong></span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-885-1717; Free Copy of "Annuity Do's &amp; Don'ts for Baby Boomers" &amp; "Annuity Rate Report")</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Sleek EZ Pet Grooming Tools </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">SleekEZ.com (1-855-SLEEKEZ)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">So Clean </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[CPAP cleaner]</span><em><strong> </strong></em>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-658-4583) </span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Super Beets </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-323-8304; SuperBeetsChews.com)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Super Beets Memory &amp; Focus</span></strong><br>
+</td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);" id="isPasted">(SuperBeetsFocus.com)</span><br>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Swiss America </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[commercial by star "Pat Boone".]</span>
+</td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-289-2646; Free Copy Of “The Secret War”)</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><br>(1-800-630-1494; Free Report: “What The Bible Says About Money” SwissAmerica.com/Bible)<br><br>(1-800-289-2646; Free Copy Of “The Timeless Truth About Gold And Silver”)<br><br>(1-800-289-2646; Walking Liberty Half Dollars SwissAmerica.com/CBNSilver)<br><br>(1-866-997-5578; Free Copy Of “Precious Metals Kit”)</span><br><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-289-2646; Free Newsletter 2023 "Real Money Perspective"; <a href="//SwissAmerica.com/CBN">SwissAmerica.com/CBN</a>)</span><br>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>The Chosen</strong> [Tickets available]</span></td>
+<td style="width: 49.4395%;"><a href="https://www.angel.com/the-chosen-3?utm_source=thechosentickets&amp;utm_medium=redirect&amp;utm_campaign=the-chosen-3" id="" rel="noopener noreferrer" target="_blank" title=""><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">TheChosenTickets.com</span></a></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted" style="box-sizing: border-box; font-weight: 700; color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;"><span style="box-sizing: border-box; font-size: 18px; color: rgb(0, 0, 0);">The Harbingers of Things to Come </span></span></strong><span style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;"><span style="box-sizing: border-box; font-size: 18px; color: rgb(0, 0, 0);">[Film]</span></span>
+</td>
+<td style="width: 49.4395%;"><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(Release Date: May 12, 2022; <span style="color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">fathomevents.com/events/The-Harbingers-of-things-to-come</span>)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);" id="isPasted"><strong>The Josiah Manifesto</strong> [Book] </span><br>
+</td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);" id="isPasted">www.BooksByJonathanCahn.com</span><br>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>The Journey</strong> [Movie] </span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">TheJourney.Movie</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);" id="isPasted"><strong>The Miracle Club</strong> [Movie]</span><br>
+</td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);" id="isPasted">SonyClassics.com</span><br>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>The Return of the Gods</strong> [Book by Jonathan Cahn] </span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">www.BooksByJonathanCahn.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"><strong>Timeshare Legal</strong> [Selling a Timeshare]</span></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-737-1010, 1-888-328-2203); TimeshareLegal.com </span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">United Healthcare </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[AARP supplement plan]</span><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> </span></strong>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-470-7734)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">United States Medical Supply </span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-850-2472, 1-808-909-6506); USMed.com</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">UPWalker </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[walker]</span><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> </span></strong>
+</td>
+<td style="width: 49.4395%;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-800-571-0856) </span><span style="color: rgb(0, 0, 0);">[C</span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">oupon Code: SAVE100]</span>
+</td>
+</tr>
+<tr>
+<td style="width: 50.4484%;">
+<strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">Viasat </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">[satellite broadband]</span><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);"> </span></strong>
+</td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-888-703-9620)</span></td>
+</tr>
+<tr>
+<td style="width: 50.4484%;"><strong id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">WellCare</span></strong></td>
+<td style="width: 49.4395%;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(0, 0, 0);">(1-855-885-4624)</span></td>
+</tr>
+</tbody></table>
+<h2 id="-2"><br></h2>
+<hr>
+<h2 data-toc="true" id="-3"><br></h2>
+<p><br></p>
+  </div>
+</article>
+
+
+</body>
+</html>

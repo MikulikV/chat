@@ -7,15 +7,16 @@ from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationTokenBufferMemory
 import openai
 import pinecone
-import os
-from config import TEMPERATURE, INDEX_NAME, EMBED_MODEL, MODEL
+import sys
+sys.path.append("backend/")
+from config import OPENAI_API_KEY, PINECONE_API_KEY, PINECONE_ENV, TEMPERATURE, INDEX_NAME, EMBED_MODEL, MODEL
 from dotenv import load_dotenv 
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = OPENAI_API_KEY
 pinecone.init(
-    api_key=os.getenv("PINECONE_API_KEY"), 
-    environment=os.getenv("PINECONE_ENV"), 
+    api_key=PINECONE_API_KEY, 
+    environment=PINECONE_ENV, 
 )
 
 # Define vector store

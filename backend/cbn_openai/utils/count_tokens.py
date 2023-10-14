@@ -1,4 +1,6 @@
 import tiktoken
+import sys
+sys.path.append("backend/")
 from config import MODEL, TOKEN_LIMIT, MAX_RESPONSE_TOKENS
 
 

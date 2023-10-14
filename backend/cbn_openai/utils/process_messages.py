@@ -1,3 +1,5 @@
+import sys
+sys.path.append("backend/")
 from config import PROMPT
 
 

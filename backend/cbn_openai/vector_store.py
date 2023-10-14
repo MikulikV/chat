@@ -1,14 +1,14 @@
 import openai
 import pinecone
-import os
-from dotenv import load_dotenv
-from config import EMBED_MODEL, INDEX_NAME
+import sys
+sys.path.append("backend/")
+from config import OPENAI_API_KEY, PINECONE_API_KEY, PINECONE_ENV, EMBED_MODEL, INDEX_NAME
 
-load_dotenv()
-openai.api_key= os.environ["OPENAI_API_KEY"]
+
+openai.api_key= OPENAI_API_KEY
 pinecone.init(
-    api_key=os.environ["PINECONE_API_KEY"], 
-    environment=os.environ["PINECONE_ENV"], 
+    api_key=PINECONE_API_KEY, 
+    environment=PINECONE_ENV, 
 )
 
 
