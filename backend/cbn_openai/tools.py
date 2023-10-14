@@ -21,24 +21,24 @@ functions = [
             "required": ["location"],
         },
     },
-    {
-        "name": "get_actual_information",
-        "description": "Get actual information",
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "key_query": {
-                    "type": "string",
-                    "description": "The key word or phrase, e.g. What is Orphan's Promise?",
-                },
-                "category": {
-                    "type": "string",
-                    "enum": ["Briefing Notes & Run Sheets", "Brands", "Programs", "Marketing Campaigns", "Product", "Prayer", "Caller Resources", "CBN PC Resources", "Digital Media"]
-                },
-            },
-            "required": ["key_query"],
-        },
-    }
+    # {
+    #     "name": "get_actual_information",
+    #     "description": "Get actual information",
+    #     "parameters": {
+    #         "type": "object",
+    #         "properties": {
+    #             "key_query": {
+    #                 "type": "string",
+    #                 "description": "The key word or phrase, e.g. What is Orphan's Promise?",
+    #             },
+    #             "category": {
+    #                 "type": "string",
+    #                 "enum": ["Briefing Notes & Run Sheets", "Brands", "Programs", "Marketing Campaigns", "Product", "Prayer", "Caller Resources", "CBN PC Resources", "Digital Media"]
+    #             },
+    #         },
+    #         "required": ["key_query"],
+    #     },
+    # }
 ]
 
 

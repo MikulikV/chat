@@ -10,7 +10,7 @@ from cbn_openai.tools import functions, get_current_weather, get_actual_informat
 openai.api_key = OPENAI_API_KEY
 available_functions = {
     "get_current_weather": get_current_weather,
-    "get_actual_information": get_actual_information,
+    # "get_actual_information": get_actual_information,
 }
 
 

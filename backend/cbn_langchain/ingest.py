@@ -10,7 +10,16 @@ from utils.load_data import load_data
 if __name__ == "__main__":
     # load OPENAI_API_KEY
     chunks = []
-    source_dir = ["backend/data/cbn_knowledge_base/brands/"]
+    source_dir = [
+        "data/cbn_knowledge_base/brands/",
+        "data/cbn_knowledge_base/caller-resources/",
+        "data/cbn_knowledge_base/cbn-pc-resources/",
+        "data/cbn_knowledge_base/digital-media/",
+        "data/cbn_knowledge_base/marketing-campaigns/",
+        "data/cbn_knowledge_base/prayers/",
+        "data/cbn_knowledge_base/products/",
+        "data/cbn_knowledge_base/programs/",
+    ]
     for sd in source_dir:
         chunks.extend(load_data(sd))
 
